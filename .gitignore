@@ -137,3 +137,5 @@ cython_debug/
 *.pt
 .pt
 *.env
+models/
+models/*
