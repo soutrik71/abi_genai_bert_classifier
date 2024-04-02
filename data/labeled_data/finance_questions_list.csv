@@ -1,0 +1,101 @@
+Domain,Question,FinalLabel
+finance,What is the total number of documents paid not on time in Canada?,Simple
+finance,How many suppliers in the US have a 'Not On Time' payment indicator?,Simple
+finance,What is the total amount paid not on time in GHQ US?,Simple
+finance,Which supplier has the highest number of documents paid not on time across all regions?,Simple
+finance,What is the percentage of documents paid on time in the TRANSPORT industry category?,Simple
+finance,In which quarter did the CANS industry category have the highest amount paid not on time?,Simple
+finance,What is the average delay days for payments in the MAINTENANCE industry category?,Simple
+finance,Which country has the lowest percentage of documents paid on time?,Simple
+finance,How many documents were paid on time in the LOGISTICS SUPPORT industry category in Q1?,Simple
+finance,What is the total amount for documents paid on time in the BOTTLES industry category?,Simple
+finance,Which supplier has the lowest amount paid not on time in Canada?,Simple
+finance,How does the amount paid not on time in the CANSHEETS industry category compare between Q1 and Q2?,Simple
+finance,What is the total delay days for the supplier with the highest number of delayed payments?,Simple
+finance,Which industry category has the highest number of suppliers with a 'Not On Time' payment indicator?,Simple
+finance,What is the average amount paid not on time per supplier in the US?,Simple
+finance,How many documents were paid not on time in the Road - 1st Tier industry category?,Simple
+finance,Which country has the highest total amount paid not on time?,Simple
+finance,What is the total number of suppliers with a 'Not On Time' payment indicator in the MAINTENANCE industry category?,Simple
+finance,Which supplier has the highest average delay days in payments?,Simple
+finance,What percentage of documents were paid on time by BALL METAL CONTAINER GROUP?,Simple
+finance,How does the total amount paid not on time in the TRANSPORT industry category vary by quarter?,Simple
+finance,Which supplier in the LOGISTICS SUPPORT industry category has the most documents paid not on time?,Simple
+finance,What is the total number of documents paid on time in the SALES industry category?,Simple
+finance,Which country has the highest average delay days for payments?,Simple
+finance,How many suppliers in the CANS industry category have documents paid on time?,Simple
+finance,What is the percentage of documents paid on time in Canada compared to the US?,Simple
+finance,Which industry category has the lowest average delay days for payments?,Simple
+finance,What is the total amount paid not on time by suppliers in the BOTTLES industry category?,Simple
+finance,How many documents were paid not on time by GROUPE ROBERT INC.?,Simple
+finance,What is the percentage of documents paid on time in the INTERNAL NEED industry category?,Simple
+finance,Which supplier has the lowest total amount for documents paid on time?,Simple
+finance,How does the average delay days for payments in the CANSHEETS industry category compare across countries?,Simple
+finance,What is the total number of delayed payment documents in the Road - 1st Tier industry category?,Simple
+finance,Which country's suppliers have the highest total amount paid not on time?,Simple
+finance,What is the total amount for documents paid on time by suppliers in the UNCLASSIFIED industry category?,Simple
+finance,How many suppliers have a 'Not On Time' payment indicator in the GHQ US region?,Simple
+finance,What is the average amount paid not on time in the TRANSPORT industry category?,Simple
+finance,Which supplier has the most documents paid on time in the MAINTENANCE industry category?,Simple
+finance,How does the percentage of documents paid on time vary between Q1 and Q2 in the US?,Simple
+finance,What is the total number of documents paid not on time by ARDAGH GLASS INC?,Simple
+finance,Which industry category has the highest total amount paid not on time?,Simple
+finance,How many suppliers in the CANS industry category have a 'Not On Time' payment indicator?,Simple
+finance,What is the average delay days in the LOGISTICS SUPPORT industry category?,Simple
+finance,Which country has the lowest total amount for documents paid on time?,Simple
+finance,How many documents were paid on time in the SALES industry category in Q2?,Simple
+finance,What is the total number of suppliers with a 'Not On Time' payment indicator in the BOTTLES industry category?,Simple
+finance,Which supplier in the TRANSPORT industry category has the lowest average delay days?,Simple
+finance,What percentage of documents were paid on time in the GHQ US region?,Simple
+finance,Which industry category in Canada has the highest total amount paid not on time?,Simple
+finance,How does the total number of documents paid not on time in the INTERNAL NEED industry category compare across quarters?,Simple
+finance,"What are the top 5 suppliers in terms of the amount paid not on time in the US, and how does this compare to the top 5 suppliers in Canada?",Complex
+finance,"How does the delay days KPI vary across different industry categories, and which category has the highest average delay?",Simple
+finance,Can we identify any correlation between supplier size and the percentage of documents paid not on time within the TRANSPORT industry category?,Complex
+finance,"What is the trend of the amount paid not on time across quarters in 2023 for the CANS industry, and how does it compare to the BOTTLES industry?",Complex
+finance,"Which supplier has the highest number of documents paid not on time in the first quarter of 2023, and what is the primary delay reason for this supplier?",Complex
+finance,"For suppliers with a high percentage of documents paid on time, what are the common characteristics in terms of payment frequency and industry category?",Complex
+finance,How does the average delay days KPI for suppliers in the MAINTENANCE industry compare between those with Daily payment frequency and those with Monthly payment frequency?,Complex
+finance,"What is the distribution of delay reasons across suppliers in the LOGISTICS SUPPORT industry, and which reason is most prevalent?",Complex
+finance,Is there a significant difference in the amount for documents paid on time between suppliers in the INTERNAL NEED industry versus those in the SALES industry?,Simple
+finance,What are the trends in the number of documents paid not on time for the top 3 suppliers with the largest amount paid not on time in the GHQ US region across 2023?,Complex
+finance,How does the percentage of documents paid on time vary across different supplier account groups within the CANSHEETS industry?,Simple
+finance,"Which country has the highest total amount paid not on time across all industries, and what is the predominant industry in this country?",Simple
+finance,Can we identify a pattern in delay days based on the payterm key for suppliers in the Road - 1st Tier industry category?,Complex
+finance,What is the relationship between the expected payment date and actual clearing date for documents in the TRANSPORT industry with a delay reason of 'Late IR'?,Complex
+finance,"Which suppliers have improved their pot_supplier_indicator from 'Not On Time' to 'On Time' in 2023, and what measures did they likely implement?",Complex
+finance,How does the average amount paid not on time per document compare between the top 5 industries with the highest volume of transactions?,Simple
+finance,What is the impact of payment frequency on the delay days KPI for suppliers within the MAINTENANCE industry category?,Complex
+finance,"Which document types are most associated with payments not on time in the LOGISTICS SUPPORT industry, and what is the average delay for these documents?",Simple
+finance,Can we identify any trends in the delay reasons for the BOTTLES industry over the first two quarters of 2023?,Complex
+finance,"What percentage of documents were paid on time for suppliers in the CANS industry with a Daily payment frequency, and how does this compare to those with a Bi-Monthly payment frequency?",Complex
+finance,How does the supplier size impact the amount for documents paid on time in the Road - 1st Tier industry category?,Simple
+finance,Are there any suppliers in the TRANSPORT industry that consistently meet the expected payment date across all quarters in 2023?,Simple
+finance,What is the average delay days for the top 3 suppliers with the highest amount paid not on time in the INTERNAL NEED industry?,Simple
+finance,Which industry categories have seen an improvement in the percentage of documents paid on time from Q1 to Q2 in 2023?,Simple
+finance,How does the delay days KPI for suppliers with a 'Not On Time' pot_supplier_indicator compare to those with an 'On Time' indicator in the SALES industry?,Complex
+finance,Can we identify the main reasons for payment delays for suppliers in the CANSHEETS industry with the highest amount paid not on time?,Complex
+finance,What is the correlation between the number of documents paid not on time and the total amount paid not on time for suppliers in Canada?,Complex
+finance,How does the average delay days for suppliers in the GHQ US region compare across different payment frequencies?,Simple
+finance,What strategies have suppliers in the top 5 industries by amount paid not on time implemented to reduce their delay days?,Complex
+finance,Can we identify any seasonal patterns in the payment behavior of suppliers in the BOTTLES industry across 2023?,Complex
+finance,What is the impact of different document currencies on the delay days KPI for suppliers in the MAINTENANCE industry?,Complex
+finance,Which suppliers in the LOGISTICS SUPPORT industry have the most consistent performance in terms of pot_supplier_indicator across all quarters in 2023?,Simple
+finance,How does the document type affect the likelihood of a document being paid not on time in the INTERNAL NEED industry?,Complex
+finance,What is the average amount paid not on time for suppliers in the CANS industry with a payment frequency of Daily versus Bi-Monthly?,Simple
+finance,Can we determine the effectiveness of different payterm keys in reducing delay days for suppliers in the Road - 1st Tier industry category?,Complex
+finance,What are the common characteristics of suppliers with the lowest percentage of documents paid on time in the SALES industry?,Complex
+finance,How does the expected payment date deviation compare between the top 3 industries with the highest and lowest average delay days?,Simple
+finance,What are the key factors contributing to the high amount of documents paid not on time in the TRANSPORT industry compared to the MAINTENANCE industry?,Complex
+finance,Can we identify the top 5 suppliers with the most significant improvement in amount for documents paid on time from Q1 to Q2 in 2023?,Simple
+finance,What strategies could potentially reduce the average delay days for suppliers in the LOGISTICS SUPPORT industry with a high number of documents paid not on time?,Complex
+finance,"What is the total amount paid not on time to suppliers in each country, and which country has the highest total amount paid not on time?",Simple
+finance,"How does the delay in payments (measured in delay days) correlate with the supplier size, specifically focusing on the top 10 suppliers with the highest amount of delayed payments?",Complex
+finance,"For each industry category, what is the percentage of documents paid on time, and which industry category has the lowest percentage?",Simple
+finance,"Can we identify any trends or patterns in the delay reasons for payments not made on time, particularly focusing on the top three reasons across all suppliers?",Complex
+finance,"How does the payment frequency (Daily, Bi-Monthly, Monthly) impact the percentage of documents paid on time for the top 5 suppliers with the largest amount of transactions?",Complex
+finance,"What is the relationship between the document type and the payment on time indicator, specifically identifying document types with the highest incidence of not on time payments?",Complex
+finance,"In the context of supplier account groups, which group experiences the highest amount of payments not made on time, both in terms of number of documents and total amount?",Simple
+finance,"For each quarter, how does the total amount for documents paid on time compare with the total amount paid not on time, and what can be inferred about the company's payment practices over time?",Complex
+finance,"Within each region, which supplier has the highest number of delay days and what is the average delay days across all suppliers in that region?",Simple
+finance,"What is the distribution of expected payment dates versus actual clearing dates for payments not made on time, and are there any specific time periods (e.g., end of quarter) where delays are more frequent?",Complex

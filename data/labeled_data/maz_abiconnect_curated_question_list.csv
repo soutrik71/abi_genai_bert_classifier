@@ -1,0 +1,501 @@
+Domain,Question,FinalLabel
+maz_commercial,What is the total sales volume and net revenue for the Corona Extra brand in the first quarter of 2023?,Simple
+maz_commercial,How does the net revenue per HL for the Victoria brand in February 2023 compare to March 2023?,Simple
+maz_commercial,What percentage of the total volume does the Modelo Especial brand contribute to the Occidente region in 2023?,Simple
+maz_commercial,Identify the top three brands by sales volume in the Central-Bajío region in the second quarter of 2023.,Simple
+maz_commercial,Calculate the average volume per customer for the Bud Light brand in the Norte region during the first half of 2023.,Simple
+maz_commercial,What is the percentage change in volume for the Pacifico brand from Q1 to Q2 in 2023?,Simple
+maz_commercial,Analyze the percentage change in revenue for the Negra Modelo brand from March to April 2023.,Simple
+maz_commercial,What is the percentage change in net revenue per HL for the Cucapa brand across all regions from Q2 to Q3 in 2023?,Simple
+maz_commercial,Which distribution channel achieved the highest volume for the Barrilito brand in the first quarter of 2023?,Simple
+maz_commercial,Determine the top-selling SKU for the Corona Light brand in the Sureste region in the second quarter of 2023.,Simple
+maz_commercial,What is the total volume contribution of the FERT product type code across all brands in Q1 2023?,Simple
+maz_commercial,How does the net revenue per HL for the FGTR product type code compare across the top three brands in Q2 2023?,Simple
+maz_commercial,Identify the region with the highest sales volume for the Core price segment in the first half of 2023.,Simple
+maz_commercial,Calculate the average net revenue per HL for the Superpremium price segment in Q3 2023.,Simple
+maz_commercial,What is the percentage distribution of volume by distribution channel for the Craft price segment in Q2 2023?,Simple
+maz_commercial,Analyze the performance of the Value price segment across different regions in the third quarter of 2023.,Complex
+maz_commercial,Which brand has the highest net revenue in the Occidente region in Q1 2023?,Simple
+maz_commercial,Determine the sales volume and net revenue for the Michelob brand in the Central-Bajío region in April 2023.,Simple
+maz_commercial,What is the total number of customers for the Modelo Especial brand in the Norte region in Q2 2023?,Simple
+maz_commercial,Calculate the average volume per customer for the Corona Extra brand across all regions in the first quarter of 2023.,Simple
+maz_commercial,What is the percentage change in sales volume for the Victoria brand from Q2 to Q3 in 2023?,Simple
+maz_commercial,Analyze the percentage change in net revenue for the Bud Light brand from February to March 2023.,Simple
+maz_commercial,How has the net revenue per HL changed for the Pacifico brand across quarters in 2023?,Simple
+maz_commercial,"In which month did the Negra Modelo brand achieve the lowest net revenue, and why?",Complex
+maz_commercial,Which brand achieved the highest sales in volume in the Sureste region in Q3 2023?,Simple
+maz_commercial,What is the total volume and revenue of the Cucapa brand in the first quarter of 2023?,Simple
+maz_commercial,How does the net revenue per HL for the Barrilito brand in June 2023 compare to July 2023?,Simple
+maz_commercial,What percentage of the total volume does the Corona Light brand contribute to the Central-Bajío region in 2023?,Simple
+maz_commercial,Identify the top three SKUs by sales volume in the Occidente region in the second quarter of 2023.,Simple
+maz_commercial,Calculate the average volume per customer for the Michelob brand in the Norte region during the first half of 2023.,Simple
+maz_commercial,What is the percentage change in volume for the Barrilito brand from Q1 to Q2 in 2023?,Simple
+maz_commercial,Analyze the percentage change in revenue for the Corona Extra brand from March to April 2023.,Simple
+maz_commercial,What is the percentage change in net revenue per HL for the Victoria brand across all regions from Q2 to Q3 in 2023?,Simple
+maz_commercial,Which distribution channel achieved the highest volume for the Modelo Especial brand in the first quarter of 2023?,Simple
+maz_commercial,Determine the top-selling SKU for the Pacifico brand in the Sureste region in the second quarter of 2023.,Simple
+maz_commercial,What is the total volume contribution of the FGTR product type code across all brands in Q1 2023?,Simple
+maz_commercial,How does the net revenue per HL for the FERT product type code compare across the top three brands in Q2 2023?,Simple
+maz_commercial,Identify the region with the highest sales volume for the Premium price segment in the first half of 2023.,Simple
+maz_commercial,Calculate the average net revenue per HL for the Core Plus price segment in Q3 2023.,Simple
+maz_commercial,What is the percentage distribution of volume by distribution channel for the Cheladas price segment in Q2 2023?,Simple
+maz_commercial,Analyze the performance of the Core + Core Plus price segment across different regions in the third quarter of 2023.,Complex
+maz_commercial,Which brand has the highest net revenue in the Norte region in Q1 2023?,Simple
+maz_commercial,Determine the sales volume and net revenue for the Bud Light brand in the Occidente region in April 2023.,Simple
+maz_commercial,What is the total number of customers for the Negra Modelo brand in the Central-Bajío region in Q2 2023?,Simple
+maz_commercial,Calculate the average volume per customer for the Pacifico brand across all regions in the first quarter of 2023.,Simple
+maz_commercial,What is the percentage change in sales volume for the Corona Light brand from Q2 to Q3 in 2023?,Simple
+maz_commercial,Analyze the percentage change in net revenue for the Michelob brand from February to March 2023.,Simple
+maz_commercial,How has the net revenue per HL changed for the Barrilito brand across quarters in 2023?,Simple
+maz_commercial,"In which month did the Cucapa brand achieve the lowest net revenue, and why?",Complex
+maz_commercial,Which brand achieved the highest sales in volume in the Norte region in Q3 2023?,Simple
+marketing_abi_connect,What is the total number of mentions for Corona across all social media platforms in the last 3 months?,Simple
+marketing_abi_connect,"How has the sentiment distribution (positive, neutral, negative) for Michelob Ultra mentions changed from the last quarter to the current quarter?",Simple
+marketing_abi_connect,"Which country had the highest number of Budweiser mentions in the last month, and what was the predominant sentiment?",Simple
+marketing_abi_connect,Can we identify the top 5 hashtags associated with Stella Artois mentions on Twitter in the last 2 months?,Simple
+marketing_abi_connect,"What are the engagement types (like, comment, share, etc.) that have the highest occurrences for Castle brand mentions in the last quarter?",Simple
+marketing_abi_connect,Which content source name had the highest number of Aguila brand mentions in the last month?,Simple
+marketing_abi_connect,How have the impressions for Bud Light mentions on Instagram varied in the last 3 months?,Simple
+marketing_abi_connect,What is the correlation between the number of followers of the author and the number of engagements a post receives for Quilmes mentions?,Complex
+marketing_abi_connect,Which engagement type has the highest impact on the positive sentiment mentions for Brahma in the last quarter?,Simple
+marketing_abi_connect,Can we analyze the trend of negative sentiment mentions for Pilsener across different countries in the last 6 months?,Complex
+marketing_abi_connect,What are the common interests of authors who mention Stella Artois with a positive sentiment in the last 2 months?,Simple
+marketing_abi_connect,How do the number of likes correlate with the sentiment of the mention for Budweiser across all platforms in the last quarter?,Complex
+marketing_abi_connect,What is the average number of comments for negative sentiment mentions of Corona on Facebook in the last month?,Simple
+marketing_abi_connect,Which author has the highest number of mentions for Michelob Ultra with a negative sentiment in the last 3 months?,Simple
+marketing_abi_connect,Can we identify any seasonal trends in the mentions of Castle across different social media platforms in the last year?,Complex
+marketing_abi_connect,"What is the distribution of account types (individual, organisational) among authors mentioning Bud Light in the last quarter?",Simple
+marketing_abi_connect,How does the sentiment of mentions for Aguila vary across different ABI zones in the last 6 months?,Simple
+marketing_abi_connect,What are the top 5 countries with the highest reach for Quilmes mentions on Instagram in the last quarter?,Simple
+marketing_abi_connect,Can we determine the average number of video views for Budweiser mentions on YouTube in the last 2 months?,Simple
+marketing_abi_connect,What is the impact of verified authors on the engagement levels of Corona mentions on Twitter in the last month?,Simple
+marketing_abi_connect,"How do the classifications of mood (joy, anger, surprise, etc.) for Brahma mentions correlate with the sentiment in the last quarter?",Complex
+marketing_abi_connect,What is the percentage increase in the total mentions for Pilsener on social media platforms from the last quarter to the current quarter?,Simple
+marketing_abi_connect,Which hashtags are most frequently associated with negative sentiment mentions of Stella Artois on Instagram in the last month?,Simple
+marketing_abi_connect,Can we analyze the difference in engagement types between male and female authors for Bud Light mentions in the last 3 months?,Complex
+marketing_abi_connect,What are the predominant languages used in the mentions of Michelob Ultra with positive sentiment in the last quarter?,Simple
+marketing_abi_connect,How does the number of followers of the author influence the sentiment of mentions for Aguila in the last 2 months?,Complex
+marketing_abi_connect,Can we identify the top 3 authors by the number of mentions for Castle with a neutral sentiment in the last month?,Simple
+marketing_abi_connect,What is the average number of shares for positive sentiment mentions of Quilmes on Facebook in the last quarter?,Simple
+marketing_abi_connect,"How have the interactions (likes, comments, shares) for Brahma mentions on Twitter evolved in the last 6 months?",Simple
+marketing_abi_connect,What are the top 5 content source names for negative sentiment mentions of Pilsener in the last quarter?,Simple
+marketing_abi_connect,How does the sentiment distribution for Budweiser mentions vary between individual and organisational account types in the last 3 months?,Simple
+marketing_abi_connect,Can we determine the reach of Stella Artois mentions by verified authors on Instagram in the last month?,Simple
+marketing_abi_connect,What is the trend of engagements for Michelob Ultra mentions with joy classification in the last quarter?,Simple
+marketing_abi_connect,How does the number of retweets correlate with the sentiment of mentions for Aguila on Twitter in the last 2 months?,Complex
+marketing_abi_connect,Can we identify any correlation between the mood classification and the engagement type for Castle mentions in the last quarter?,Complex
+marketing_abi_connect,What are the top 3 countries with the highest number of likes for Quilmes mentions on Instagram in the last month?,Simple
+marketing_abi_connect,How do the total mentions for Brahma on social media platforms in the last quarter compare with the same period last year?,Simple
+marketing_abi_connect,Can we analyze the impact of hashtags on the engagement levels of Pilsener mentions in the last 3 months?,Complex
+marketing_abi_connect,What is the average number of replies for negative sentiment mentions of Budweiser on Facebook in the last month?,Simple
+marketing_abi_connect,Which authors have the highest impact on the positive sentiment mentions for Stella Artois across all platforms in the last quarter?,Simple
+marketing_abi_connect,How does the sentiment of mentions for Michelob Ultra vary across different engagement types in the last 2 months?,Simple
+marketing_abi_connect,Can we determine the top 5 interests of authors mentioning Aguila with a neutral sentiment in the last quarter?,Simple
+marketing_abi_connect,"What is the distribution of page types (twitter, facebook, news, etc.) for Castle mentions with positive sentiment in the last month?",Simple
+marketing_abi_connect,Can we identify the top 3 engagement types that lead to the highest number of video views for Quilmes mentions on YouTube in the last quarter?,Simple
+marketing_abi_connect,What are the predominant sentiments for Brahma mentions by authors with organisational account types in the last 3 months?,Simple
+marketing_abi_connect,How do the total mentions for Pilsener with a joy classification compare across different ABI zones in the last 6 months?,Simple
+marketing_abi_connect,Can we analyze the correlation between the number of followers and the number of engagements for Budweiser mentions in the last quarter?,Complex
+marketing_abi_connect,What is the average reach for negative sentiment mentions of Stella Artois on Instagram in the last month?,Simple
+marketing_abi_connect,How does the sentiment of mentions for Michelob Ultra compare across different countries in the last quarter?,Complex
+marketing_abi_connect,Can we determine the top 5 hashtags associated with positive sentiment mentions of Aguila across all social media platforms in the last 3 months?,Simple
+maz_commercial,What is the total volume and revenue for the Corona Extra brand in March 2023?,Simple
+maz_commercial,What is the net revenue per HL for the Victoria brand in February 2023?,Simple
+maz_commercial,What percentage of total volume does the Michelob brand represent in January 2023?,Simple
+maz_commercial,How does the sales volume of Modelo Especial compare between January and February 2023?,Simple
+maz_commercial,What is the average volume per customer for the Pacifico brand in the Central-Bajío region in March 2023?,Simple
+maz_commercial,What is the percentage change in revenue for the Bud Light brand from February to March 2023?,Simple
+maz_commercial,How has the net revenue per HL for the Negra Modelo brand changed from January to March 2023?,Simple
+maz_commercial,What is the percentage distribution of sales volume for the Cucapa brand across different distribution channels in February 2023?,Simple
+maz_commercial,What is the total number of customers purchasing Barrilito in the Occidente region in January 2023?,Simple
+maz_commercial,What is the average net revenue per HL across all brands in the Norte region in March 2023?,Simple
+maz_commercial,What is the percentage change in volume for the Corona Light brand from February to March 2023?,Simple
+maz_commercial,What is the total revenue generated by the Core segment in the Sureste region in January 2023?,Simple
+maz_commercial,How does the sales volume of the Premium segment compare between the Central-Bajío and Norte regions in February 2023?,Simple
+maz_commercial,What is the net revenue per HL for the Superpremium segment in the Occidente region in March 2023?,Simple
+maz_commercial,What percentage of total volume is contributed by the Value segment across all regions in January 2023?,Simple
+maz_commercial,What is the percentage change in net revenue per HL for the Core + Core Plus segment from January to February 2023?,Simple
+maz_commercial,How does the average volume per customer for the Cheladas segment compare across different distribution channels in March 2023?,Simple
+maz_commercial,What is the total number of customers for the Craft segment in the Sureste region in February 2023?,Simple
+maz_commercial,What is the percentage change in revenue for the Superpremium segment across all regions from February to March 2023?,Simple
+maz_commercial,What is the total sales volume for the Value segment in the Central-Bajío region in January 2023?,Simple
+maz_commercial,How has the net revenue per HL for the Core segment changed across quarters in 2023?,Simple
+maz_commercial,What is the percentage distribution of sales volume for the Premium segment in the Norte region in February 2023?,Simple
+maz_commercial,What is the average net revenue per HL for the Core Plus segment in the Occidente region in March 2023?,Simple
+maz_commercial,What is the total revenue and volume for the Corona Extra brand in the first quarter of 2023?,Simple
+maz_commercial,How does the sales volume of Victoria compare between the first and second quarters of 2023?,Simple
+maz_commercial,What is the net revenue per HL for Michelob in the first quarter of 2023?,Simple
+maz_commercial,What percentage of total volume does Modelo Especial represent in the first half of 2023?,Simple
+maz_commercial,What is the average volume per customer for Pacifico in the second quarter of 2023?,Simple
+maz_commercial,What is the percentage change in revenue for Bud Light from the first to the second quarter of 2023?,Simple
+maz_commercial,How has the net revenue per HL for Negra Modelo changed from the first to the second quarter of 2023?,Simple
+maz_commercial,What is the percentage distribution of sales volume for Cucapa across different regions in the second quarter of 2023?,Simple
+maz_commercial,What is the total number of customers purchasing Barrilito in the first half of 2023?,Simple
+maz_commercial,What is the average net revenue per HL across all brands in the second quarter of 2023?,Simple
+maz_commercial,What is the percentage change in volume for Corona Light from the first to the second quarter of 2023?,Simple
+maz_commercial,What is the total revenue generated by the Core segment in the first half of 2023?,Simple
+maz_commercial,How does the sales volume of the Premium segment compare between the first and second quarters of 2023?,Simple
+maz_commercial,What is the net revenue per HL for the Superpremium segment in the second quarter of 2023?,Simple
+maz_commercial,What percentage of total volume is contributed by the Value segment in the first half of 2023?,Simple
+maz_commercial,What is the percentage change in net revenue per HL for the Core + Core Plus segment from the first to the second quarter of 2023?,Simple
+maz_commercial,How does the average volume per customer for the Cheladas segment compare across quarters in 2023?,Simple
+maz_commercial,What is the total number of customers for the Craft segment in the first quarter of 2023?,Simple
+maz_commercial,What is the percentage change in revenue for the Superpremium segment from the first to the second quarter of 2023?,Simple
+maz_commercial,What is the total sales volume for the Value segment in the second quarter of 2023?,Simple
+maz_commercial,What is the percentage distribution of sales volume for the Premium segment across different distribution channels in the first half of 2023?,Simple
+maz_commercial,What is the average net revenue per HL for the Core Plus segment in the first quarter of 2023?,Simple
+maz_commercial,What is the total volume and revenue for the Corona Extra brand in the Sureste region in the first quarter of 2023?,Simple
+maz_commercial,How does the net revenue per HL for Victoria brand compare between the Central-Bajío and Norte regions in the second quarter of 2023?,Simple
+maz_commercial,What percentage of total volume does the Michelob brand represent in the Occidente region in the first half of 2023?,Simple
+maz_commercial,What is the total number of customers purchasing Modelo Especial in the Norte region in the first quarter of 2023?,Simple
+marketing_abi_connect,What is the total number of mentions for Budweiser across all social media platforms in the last 3 months?,Simple
+marketing_abi_connect,What are the top 5 countries by number of mentions for Corona in the last month?,Simple
+marketing_abi_connect,What is the average number of likes per mention for Michelob Ultra on Instagram in the last 2 months?,Simple
+marketing_abi_connect,What is the percent change in the number of mentions for Stella Artois on Twitter from the previous month to the current month?,Simple
+marketing_abi_connect,What is the total number of engagements for Bud Light mentions on Facebook in the last quarter?,Simple
+marketing_abi_connect,What is the sentiment distribution for Castle mentions across all platforms in the last month?,Simple
+marketing_abi_connect,What are the top 3 engagement types for Quilmes mentions on social media in the last 2 months?,Simple
+marketing_abi_connect,What is the total number of video views for Pilsener mentions on YouTube in the last 3 months?,Simple
+marketing_abi_connect,What is the percent change in the number of shares for Aguila mentions on Facebook from the last month to the current month?,Simple
+marketing_abi_connect,What is the most common hashtag associated with Brahma mentions on Twitter in the last month?,Simple
+marketing_abi_connect,What is the total number of comments for Budweiser mentions on Instagram in the last quarter?,Simple
+marketing_abi_connect,What is the average number of impressions per mention for Corona on Facebook in the last 2 months?,Simple
+marketing_abi_connect,What is the total reach for Michelob Ultra mentions across all social media platforms in the last month?,Simple
+marketing_abi_connect,What is the sentiment share of positive mentions for Stella Artois across all platforms in the last quarter?,Simple
+marketing_abi_connect,What are the top 5 content sources by number of mentions for Castle in the last month?,Simple
+marketing_abi_connect,What is the average number of followers for authors mentioning Quilmes on Twitter in the last 3 months?,Simple
+marketing_abi_connect,What is the percent change in the total number of interactions for Pilsener mentions on Instagram from the last month to the current month?,Simple
+marketing_abi_connect,What is the most common language used in Aguila mentions on social media in the last 2 months?,Simple
+marketing_abi_connect,What is the total number of retweets for Brahma mentions on Twitter in the last quarter?,Simple
+marketing_abi_connect,What is the average engagement per mention for Bud Light on Facebook in the last month?,Simple
+marketing_abi_connect,What is the sentiment share of negative mentions for Budweiser across all platforms in the last 3 months?,Simple
+marketing_abi_connect,What are the top 3 countries by reach for Corona mentions in the last month?,Simple
+marketing_abi_connect,What is the percent change in the number of likes for Michelob Ultra mentions on Instagram from the previous month to the current month?,Simple
+marketing_abi_connect,What is the total number of mentions for Stella Artois with a 'joy' classification in the last quarter?,Simple
+marketing_abi_connect,What is the average number of shares per mention for Castle on Facebook in the last 2 months?,Simple
+marketing_abi_connect,What are the top 5 hashtags associated with Quilmes mentions on Twitter in the last month?,Simple
+marketing_abi_connect,What is the total number of comments for Pilsener mentions on Instagram in the last 3 months?,Simple
+marketing_abi_connect,What is the average number of video views per mention for Aguila on YouTube in the last quarter?,Simple
+marketing_abi_connect,What is the percent change in the number of engagements for Brahma mentions on Facebook from the last month to the current month?,Simple
+marketing_abi_connect,What is the most common author account type for Bud Light mentions on social media in the last month?,Simple
+marketing_abi_connect,What is the sentiment distribution for Budweiser mentions across all platforms in the last 2 months?,Simple
+marketing_abi_connect,What are the top 3 engagement types for Corona mentions on social media in the last quarter?,Simple
+marketing_abi_connect,What is the total number of interactions for Michelob Ultra mentions across all social media platforms in the last month?,Simple
+marketing_abi_connect,What is the average number of likes per mention for Stella Artois on Instagram in the last 3 months?,Simple
+marketing_abi_connect,What is the total number of shares for Castle mentions on Facebook in the last quarter?,Simple
+marketing_abi_connect,What is the sentiment share of neutral mentions for Quilmes across all platforms in the last 2 months?,Simple
+marketing_abi_connect,What are the top 5 content sources by number of mentions for Pilsener in the last month?,Simple
+marketing_abi_connect,What is the average number of followers for authors mentioning Aguila on Twitter in the last quarter?,Simple
+marketing_abi_connect,What is the percent change in the total number of comments for Brahma mentions on Instagram from the last month to the current month?,Simple
+marketing_abi_connect,What is the most common language used in Bud Light mentions on social media in the last 2 months?,Simple
+marketing_abi_connect,What is the total number of retweets for Budweiser mentions on Twitter in the last 3 months?,Simple
+marketing_abi_connect,What is the average engagement per mention for Corona on Facebook in the last month?,Simple
+marketing_abi_connect,What is the sentiment share of positive mentions for Michelob Ultra across all platforms in the last quarter?,Simple
+marketing_abi_connect,What are the top 3 countries by reach for Stella Artois mentions in the last month?,Simple
+marketing_abi_connect,What is the percent change in the number of likes for Castle mentions on Instagram from the previous month to the current month?,Simple
+marketing_abi_connect,What is the total number of mentions for Quilmes with a 'surprise' classification in the last 2 months?,Simple
+marketing_abi_connect,What is the average number of shares per mention for Pilsener on Facebook in the last quarter?,Simple
+marketing_abi_connect,What are the top 5 hashtags associated with Aguila mentions on Twitter in the last month?,Simple
+marketing_abi_connect,What is the total number of comments for Brahma mentions on Instagram in the last 3 months?,Simple
+marketing_abi_connect,What is the average number of video views per mention for Bud Light on YouTube in the last quarter?,Simple
+maz_commercial,What is the total volume and revenue generated by Corona Extra brand in the first quarter of 2023?,Simple
+maz_commercial,How does the net revenue per HL for Victoria brand in March 2023 compare to February 2023?,Simple
+maz_commercial,What percentage of total volume does the Occidente region contribute to in February 2023?,Simple
+maz_commercial,Identify the top 3 brands in terms of sales volume in the Central-Bajío region in the first quarter of 2023.,Simple
+maz_commercial,What is the average volume per customer for Modelo Especial in the Norte region in January 2023?,Simple
+maz_commercial,Calculate the percentage change in revenue for the Bud Light brand from January to February 2023.,Simple
+maz_commercial,What is the percentage change in net revenue per HL for the Premium price segment across all brands from Q1 to Q2 2023?,Simple
+maz_commercial,Which distribution channel showed the highest growth in volume for the Core segment in the first half of 2023?,Simple
+maz_commercial,Analyze the performance of the Superpremium price segment in terms of volume and revenue in Q2 2023 compared to Q1 2023.,Simple
+maz_commercial,What are the top 5 SKUs in terms of sales volume in the Sureste region in March 2023?,Simple
+maz_commercial,How has the sales volume of Barrilito changed from February to March 2023?,Simple
+maz_commercial,What is the total revenue generated by the Craft price segment in the first quarter of 2023?,Simple
+maz_commercial,Compare the net revenue per HL for the Value and Suprema price segments in Q1 2023.,Simple
+maz_commercial,Which brand has the highest percentage increase in sales volume from Q1 to Q2 2023?,Simple
+maz_commercial,What is the sales volume and revenue of Corona Light in wholesale distribution channels in Q1 2023?,Simple
+maz_commercial,How does the average volume per customer for Pacifico brand in retail distribution channels in February 2023 compare to January 2023?,Simple
+maz_commercial,Identify the distribution channel with the highest revenue for the Core + Core Plus segment in Q2 2023.,Simple
+maz_commercial,What percentage of total revenue does the Occidente region account for in the Superpremium segment in Q1 2023?,Simple
+maz_commercial,Calculate the percentage change in sales volume for Michelob brand across all regions from Q1 to Q2 2023.,Simple
+maz_commercial,What is the net revenue per HL for the Core segment in the CMM Altiplano distribution center in March 2023?,Simple
+maz_commercial,Which SKU had the lowest sales volume in the Sureste region in Q1 2023 and why?,Complex
+maz_commercial,Analyze the performance of Negra Modelo brand in terms of volume and revenue in the CMM Michoacan distribution center in Q2 2023.,Complex
+maz_commercial,What is the percentage distribution of volume for the Core Plus segment across different distribution channels in Q1 2023?,Simple
+maz_commercial,How has the net revenue per HL changed for Cucapa brand across quarters in 2023?,Simple
+maz_commercial,Identify the brand with the highest sales in volume in the CMM Occidente distribution center in February 2023 and the possible reasons.,Complex
+maz_commercial,What is the total volume and revenue of the Value price segment in the Norte region in Q2 2023?,Simple
+maz_commercial,Calculate the average volume per customer for all brands in the Central-Bajío region in Q1 2023.,Simple
+maz_commercial,What percentage change in revenue was observed for the Premium price segment from Q1 to Q2 2023?,Simple
+maz_commercial,Which brand has the highest net revenue per HL in the Sureste region in March 2023?,Simple
+maz_commercial,How does the sales volume of Modelo Especial in retail distribution channels in January 2023 compare to wholesale?,Simple
+maz_commercial,What is the percentage change in net revenue per HL for Barrilito brand from February to March 2023?,Simple
+maz_commercial,Identify the top 3 SKUs in terms of revenue in the CMM Edo de Mexico distribution center in the first quarter of 2023.,Simple
+maz_commercial,What is the total revenue generated by the Craft price segment in the Occidente region in February 2023?,Simple
+maz_commercial,Compare the average volume per customer for the Core and Core Plus segments in the CMM Centro distribution center in Q2 2023.,Simple
+maz_commercial,Which distribution channel showed the highest growth in revenue for the Superpremium segment in the first half of 2023?,Simple
+maz_commercial,Analyze the performance of the Value price segment in terms of volume and revenue in the CMM Hidalgo distribution center in Q1 2023.,Complex
+maz_commercial,What are the top 5 brands in terms of sales volume in the CMM San Luis Potosí distribution center in March 2023?,Simple
+maz_commercial,How has the sales volume of the Core segment changed from Q1 to Q2 2023 across all regions?,Simple
+maz_commercial,What is the total revenue generated by the Suprema price segment in the Norte region in the first quarter of 2023?,Simple
+maz_commercial,Compare the net revenue per HL for the Core and Premium segments across all brands in Q2 2023.,Simple
+maz_commercial,Which brand has the highest percentage increase in revenue from Q1 to Q2 2023?,Simple
+maz_commercial,What is the sales volume and revenue of Bud Light in direct sales channels in Q1 2023?,Simple
+maz_commercial,How does the average volume per customer for Victoria brand in wholesale distribution channels in March 2023 compare to February 2023?,Simple
+maz_commercial,Identify the distribution channel with the highest revenue for the Core segment in Q1 2023.,Simple
+maz_commercial,What percentage of total revenue does the Central-Bajío region account for in the Premium segment in Q2 2023?,Simple
+maz_commercial,Calculate the percentage change in sales volume for the Craft price segment across all regions from Q1 to Q2 2023.,Simple
+maz_commercial,What is the net revenue per HL for the Core Plus segment in the CMM Colima distribution center in February 2023?,Simple
+maz_commercial,Which SKU had the highest sales volume in the Occidente region in Q2 2023 and why?,Complex
+maz_commercial,Analyze the performance of Corona Extra brand in terms of volume and revenue in the CMM Del Bajío distribution center in Q1 2023.,Complex
+maz_commercial,What is the percentage distribution of volume for the Value segment across different distribution channels in Q2 2023?,Simple
+marketing_abi_connect,"What trends in sentiment towards Michelob Ultra can be observed in the last three months, and how do they compare with the previous quarter?",Simple
+marketing_abi_connect,How have the interactions and engagements with Budweiser mentions on Twitter evolved in the last month?,Simple
+marketing_abi_connect,"Which content source name has generated the most mentions for Stella Artois in the last quarter, and how has this impacted brand perception?",Complex
+marketing_abi_connect,Can we identify a correlation between the number of likes and the sentiment of Corona mentions on Instagram in the last two months?,Complex
+marketing_abi_connect,What are the top three hashtags associated with positive mentions of Bud Light in the USA during the last month?,Simple
+marketing_abi_connect,How do the number of shares for negative mentions of Quilmes compare across different social media platforms in the last quarter?,Simple
+marketing_abi_connect,What is the impact of verified authors on the engagement rates of Pilsener mentions on Facebook in the last month?,Complex
+marketing_abi_connect,How do the sentiments of mentions about Castle vary across different ABI zones in the last three months?,Simple
+marketing_abi_connect,"Which country has shown the highest increase in mentions for Brahma in the last quarter, and what is the predominant sentiment?",Simple
+marketing_abi_connect,What are the common interests of authors who mention Aguila positively on Twitter in the last two months?,Simple
+marketing_abi_connect,How has the engagement type influenced the sentiment of Stella Artois mentions in the European region in the last quarter?,Complex
+marketing_abi_connect,What is the average number of comments on positive versus negative mentions of Budweiser on Instagram in the last month?,Simple
+marketing_abi_connect,How do the impressions of Corona mentions on news platforms compare with those on social media platforms in the last quarter?,Simple
+marketing_abi_connect,What percentage of Michelob Ultra mentions from verified authors were positive in the last two months?,Simple
+marketing_abi_connect,Which engagement type has resulted in the highest reach for Bud Light mentions in Canada in the last three months?,Simple
+marketing_abi_connect,How has the sentiment towards Quilmes mentions in Argentina evolved from the previous quarter to the last month?,Simple
+marketing_abi_connect,"What are the top five content source names generating the most mentions for Pilsener in the last quarter, and how do they vary by sentiment?",Simple
+marketing_abi_connect,Can we identify a trend in the number of likes for positive versus negative mentions of Castle in the South African market in the last quarter?,Complex
+marketing_abi_connect,What is the role of hashtags in influencing the engagement rates of Brahma mentions on Instagram in the last month?,Complex
+marketing_abi_connect,How do follower counts of authors mentioning Aguila correlate with the sentiment of their posts in the last two months?,Complex
+marketing_abi_connect,"Which country has the highest number of negative mentions for Stella Artois, and what is the common engagement type in the last quarter?",Simple
+marketing_abi_connect,What impact does the account type (individual vs organizational) have on the sentiment of Budweiser mentions in the last three months?,Simple
+marketing_abi_connect,How do the sentiments of mentions about Bud Light by male authors compare with those by female authors in the last month?,Simple
+marketing_abi_connect,"What are the predominant sentiments of mentions about Corona in Mexico, and how do they correlate with engagement types in the last quarter?",Complex
+marketing_abi_connect,How has the average number of interactions per mention for Michelob Ultra changed from the last quarter to the last month?,Simple
+marketing_abi_connect,"What is the distribution of positive, neutral, and negative sentiments for Quilmes mentions on Twitter in the last two months?",Simple
+marketing_abi_connect,How do engagement rates for positive mentions of Pilsener on Facebook compare with those on Instagram in the last month?,Simple
+marketing_abi_connect,What are the predominant classifications of mood for negative mentions of Castle across all social media platforms in the last quarter?,Simple
+marketing_abi_connect,How do the number of shares for Budweiser mentions with the hashtag #easytocelebrate vary by sentiment in the last month?,Simple
+marketing_abi_connect,What is the correlation between the number of followers of authors and the sentiment of their mentions about Stella Artois in the last two months?,Complex
+marketing_abi_connect,"Which hashtags are most commonly associated with negative mentions of Brahma in the last quarter, and what is their impact on brand perception?",Complex
+marketing_abi_connect,How does the sentiment of Aguila mentions vary between male and female authors in the last month?,Simple
+marketing_abi_connect,What are the top three countries with the highest engagement rates for Michelob Ultra mentions in the last quarter?,Simple
+marketing_abi_connect,How does the number of comments on Instagram mentions of Bud Light compare with those on Twitter in the last month?,Simple
+marketing_abi_connect,What is the effect of author verification status on the sentiment of Corona mentions on Facebook in the last two months?,Simple
+marketing_abi_connect,How have the sentiments of mentions about Quilmes evolved in Argentina from the last quarter to the last month?,Simple
+marketing_abi_connect,What are the common engagement types for positive mentions of Pilsener in the European region in the last quarter?,Simple
+marketing_abi_connect,How does the sentiment distribution of Castle mentions in the AFR zone compare with the NAZ zone in the last three months?,Simple
+marketing_abi_connect,What is the average number of likes for mentions of Brahma with a positive sentiment on Instagram in the last month?,Simple
+marketing_abi_connect,How does the sentiment of Aguila mentions correlate with the number of retweets on Twitter in the last quarter?,Simple
+marketing_abi_connect,Which content source name has the highest impact on the sentiment of Stella Artois mentions in the last two months?,Simple
+marketing_abi_connect,How do the number of interactions for mentions of Budweiser with a joy classification compare with those with anger in the last month?,Simple
+marketing_abi_connect,What are the predominant sentiments of mentions about Michelob Ultra by organizational account types in the last quarter?,Simple
+marketing_abi_connect,How does the number of video views for positive mentions of Quilmes on YouTube compare with negative mentions in the last month?,Simple
+marketing_abi_connect,What are the top three interests of authors who mention Pilsener positively on social media platforms in the last quarter?,Simple
+marketing_abi_connect,How do the sentiments of mentions about Castle by verified authors compare with those by non-verified authors in the last two months?,Simple
+marketing_abi_connect,What is the correlation between the number of shares and the sentiment of Brahma mentions on Facebook in the last quarter?,Complex
+marketing_abi_connect,How do the number of likes for Aguila mentions with the hashtag #coronacapital2023 vary by sentiment in the last month?,Simple
+marketing_abi_connect,What is the average number of comments on negative mentions of Stella Artois on Instagram in the last two months?,Simple
+marketing_abi_connect,How does the engagement type affect the sentiment of Bud Light mentions in the United States in the last quarter?,Complex
+maz_commercial,Why did the sales volume of Corona Extra vary significantly across different regions in 2023?,Complex
+maz_commercial,Why is the net revenue per HL for Modelo Especial higher in the Occidente region compared to the Norte region?,Complex
+maz_commercial,Why did the revenue of Bud Light decrease from Q1 to Q2 in 2023?,Complex
+maz_commercial,Why is the average volume per customer higher for the retail distribution channel compared to the wholesale channel?,Complex
+maz_commercial,Why did the percentage change in volume for the Core segment show a decline in Q3 2023?,Complex
+maz_commercial,Why is the sales volume for Barrilito significantly lower in the Central-Bajío region compared to the Norte region?,Complex
+maz_commercial,Why did the net revenue per HL for the Premium segment increase in Q4 2023 compared to Q3 2023?,Complex
+maz_commercial,Why is the percentage change in revenue for Cucapa higher in the Sureste region compared to other regions?,Complex
+maz_commercial,Why did the number of customers for Victoria increase in the Occidente region in 2023?,Complex
+maz_commercial,Why is the average volume per customer lower for Michelob in the Sureste region?,Complex
+maz_commercial,Why did the percentage change in net revenue per HL for the Value segment decrease from Q2 to Q3 in 2023?,Complex
+maz_commercial,Why is the sales volume for Pacífico higher in the Norte region than in the Central-Bajío region?,Complex
+maz_commercial,Why did the revenue of Corona Light not increase proportionally with its volume increase in 2023?,Complex
+maz_commercial,Why is the net revenue per HL for the Superpremium segment higher in the direct sales channel?,Complex
+maz_commercial,Why did the percentage change in volume for Modelo Especial decline in the Edo de Mexico distribution center?,Complex
+maz_commercial,Why is the average volume per customer for Barrilito significantly different between the wholesale and retail channels?,Complex
+maz_commercial,Why did the number of customers for the Core Plus segment increase significantly in the Occidente region in 2023?,Complex
+maz_commercial,Why is the sales volume for Negra Modelo not consistent across all regions?,Complex
+maz_commercial,Why did the net revenue per HL for the Craft segment show a significant increase in Q4 2023?,Complex
+maz_commercial,Why is the percentage change in revenue for Corona Extra higher in the Altiplano distribution center?,Complex
+maz_commercial,Why did the average volume per customer for the Suprema segment decrease in the Sureste region?,Complex
+maz_commercial,Why is the sales volume for Bud Light higher in the direct sales channel compared to the wholesale channel?,Complex
+maz_commercial,Why did the revenue of Barrilito decrease in the Metropolitana distribution center from Q1 to Q2 in 2023?,Complex
+maz_commercial,Why is the net revenue per HL for Victoria lower in the retail channel than in the direct sales channel?,Complex
+maz_commercial,Why did the percentage change in volume for the Core segment show an increase in the Norte region?,Complex
+maz_commercial,Why is the average volume per customer for the Premium segment higher in the Occidente region?,Complex
+maz_commercial,Why did the number of customers for Michelob decrease in the Central-Bajío region in 2023?,Complex
+maz_commercial,Why is the sales volume for the Core + Core Plus segment not uniform across all distribution channels?,Complex
+maz_commercial,Why did the net revenue per HL for Cucapa show a significant difference between the wholesale and retail channels?,Complex
+maz_commercial,Why is the percentage change in revenue for Pacífico higher in the Norte region compared to the Sureste region?,Complex
+maz_commercial,Why did the average volume per customer for the Value segment increase in the Occidente region?,Complex
+maz_commercial,Why is the sales volume for Barrilito lower in the Hidalgo distribution center?,Complex
+maz_commercial,Why did the revenue of Modelo Especial not increase despite a high volume of sales in 2023?,Complex
+maz_commercial,Why is the net revenue per HL for the Craft segment lower in the Sureste region?,Complex
+maz_commercial,Why did the percentage change in volume for the Superpremium segment show a decline in the Metropolitana distribution center?,Complex
+maz_commercial,Why is the average volume per customer for Corona Extra higher in the direct sales channel?,Complex
+maz_commercial,Why did the number of customers for Bud Light in the retail channel not increase in 2023?,Complex
+maz_commercial,Why is the sales volume for the Core Plus segment higher in the Occidente region than in the Norte region?,Complex
+maz_commercial,Why did the net revenue per HL for Barrilito decrease in the Altiplano distribution center from Q3 to Q4 in 2023?,Complex
+maz_commercial,Why is the percentage change in revenue for Victoria not consistent across quarters in 2023?,Complex
+maz_commercial,Why did the average volume per customer for the Premium segment decrease in the Central-Bajío region?,Complex
+maz_commercial,Why is the sales volume for Corona Light significantly different between the wholesale and retail channels?,Complex
+maz_commercial,Why did the revenue of the Core segment not show significant growth in the Sureste region in 2023?,Complex
+maz_commercial,Why is the net revenue per HL for Michelob higher in the Occidente region compared to other regions?,Complex
+maz_commercial,Why did the percentage change in volume for Negra Modelo show a decline in the Edo de Mexico distribution center?,Complex
+maz_commercial,Why is the average volume per customer for Cucapa lower in the retail channel than in the direct sales channel?,Complex
+maz_commercial,Why did the number of customers for the Value segment increase significantly in the Norte region in 2023?,Complex
+maz_commercial,Why is the sales volume for the Core + Core Plus segment not increasing in the Sureste region?,Complex
+maz_commercial,Why did the net revenue per HL for Pacífico decrease in the Occidente region from Q1 to Q2 in 2023?,Complex
+maz_commercial,Why is the percentage change in revenue for Bud Light lower in the direct sales channel compared to the wholesale channel?,Complex
+marketing_abi_connect,Why did mentions of Corona see an increase in positive sentiment on Twitter in the last quarter of 2023?,Complex
+marketing_abi_connect,Why did the number of engagements for Michelob Ultra mentions increase on Instagram in the last two months?,Complex
+marketing_abi_connect,Why has there been a decrease in the number of shares for Budweiser posts on Facebook in the last month?,Complex
+marketing_abi_connect,Why are the mentions of Stella Artois predominantly positive in the USA compared to Canada?,Complex
+marketing_abi_connect,Why do mentions of Bud Light have higher interactions on Twitter than on Instagram in the last quarter?,Complex
+marketing_abi_connect,Why has the sentiment of mentions for Castle Lager in South Africa shifted from positive to neutral in the last three months?,Complex
+marketing_abi_connect,Why do posts about Quilmes in Argentina have a higher number of likes than those in Brazil?,Complex
+marketing_abi_connect,Why are there more female authors mentioning Michelob Ultra in the last month?,Complex
+marketing_abi_connect,Why is the engagement type 'comment' more prevalent for Budweiser mentions in the last quarter?,Complex
+marketing_abi_connect,Why has the number of negative sentiments for Aguila increased on Facebook in the last two months?,Complex
+marketing_abi_connect,Why are hashtags related to Bud Light more popular in Canada than in the United States in the last quarter?,Complex
+marketing_abi_connect,Why do Corona mentions have a higher reach on Instagram compared to Twitter in the last month?,Complex
+marketing_abi_connect,Why are there more mentions of Pilsener from male authors than female authors in the last quarter?,Complex
+marketing_abi_connect,Why has there been an increase in the number of retweets for posts about Stella Artois in the UK in the last month?,Complex
+marketing_abi_connect,Why do mentions of Brahma in Brazil have a higher impact score on social media platforms in the last three months?,Complex
+marketing_abi_connect,Why are there fewer comments on posts about Quilmes on Instagram compared to Twitter in the last quarter?,Complex
+marketing_abi_connect,Why has the sentiment of mentions about Castle Lager in South Africa been predominantly negative in the last month?,Complex
+marketing_abi_connect,Why are certain hashtags associated with Budweiser more prevalent in negative mentions than in positive ones?,Complex
+marketing_abi_connect,Why do mentions of Michelob Ultra by verified authors have more engagements than those by non-verified authors?,Complex
+marketing_abi_connect,Why has the number of mentions of Bud Light decreased in Germany in the last two months?,Complex
+marketing_abi_connect,Why do posts about Corona on Facebook have a higher number of shares compared to those on Instagram?,Complex
+marketing_abi_connect,Why are mentions of Aguila in Colombia generating more interactions in the last quarter?,Complex
+marketing_abi_connect,Why has there been a significant increase in the number of mentions for Stella Artois in the APAC region in the last month?,Complex
+marketing_abi_connect,Why do mentions of Brahma in Brazil have more likes than those in Argentina?,Complex
+marketing_abi_connect,Why has the engagement type 'retweet' seen an increase for Budweiser mentions on Twitter in the last quarter?,Complex
+marketing_abi_connect,Why are posts about Quilmes with the engagement type 'original post' receiving more comments in Argentina?,Complex
+marketing_abi_connect,Why do mentions of Corona by individuals have a higher reach than those by organisations?,Complex
+marketing_abi_connect,Why has the sentiment of mentions for Michelob Ultra in the USA shifted towards more positive in the last three months?,Complex
+marketing_abi_connect,Why are negative mentions of Bud Light more prevalent on forums compared to social media platforms?,Complex
+marketing_abi_connect,Why do mentions of Stella Artois in the EUR zone have a higher average number of likes per post?,Complex
+marketing_abi_connect,Why has the number of positive mentions for Castle Lager in South Africa decreased in the last two months?,Complex
+marketing_abi_connect,Why do mentions of Pilsener in Ecuador have a higher number of shares on Facebook?,Complex
+marketing_abi_connect,Why has the number of mentions with the sentiment 'neutral' for Budweiser increased in the last quarter?,Complex
+marketing_abi_connect,Why are there more mentions of Aguila with the classification 'joy' in Colombia?,Complex
+marketing_abi_connect,Why do mentions of Bud Light by organisational accounts have fewer engagements than those by individual accounts?,Complex
+marketing_abi_connect,Why has there been a decrease in the number of video views for posts about Corona on Instagram in the last month?,Complex
+marketing_abi_connect,Why do mentions of Brahma in the SAZ zone have a higher number of comments than those in the NAZ zone?,Complex
+marketing_abi_connect,Why are mentions of Michelob Ultra with hashtags more likely to have positive sentiment?,Complex
+marketing_abi_connect,Why has the number of mentions of Stella Artois with the sentiment 'negative' increased in the UK?,Complex
+marketing_abi_connect,Why do mentions of Budweiser in the last quarter have a higher engagement rate on Twitter than on Facebook?,Complex
+marketing_abi_connect,Why are negative mentions of Quilmes more frequent on news platforms compared to social media?,Complex
+marketing_abi_connect,Why do mentions of Aguila in the last month have a higher average number of retweets per post?,Complex
+marketing_abi_connect,Why has there been an increase in mentions of Pilsener from female authors in the last quarter?,Complex
+marketing_abi_connect,Why do posts about Castle Lager with the engagement type 'like' have a lower reach than those with 'share'?,Complex
+marketing_abi_connect,Why are there more mentions of Bud Light with the sentiment 'positive' in the morning compared to the evening?,Complex
+marketing_abi_connect,Why has the sentiment of mentions for Corona shifted towards neutral on Instagram in the last two months?,Complex
+marketing_abi_connect,Why do mentions of Brahma with the classification 'anger' have fewer likes on Twitter?,Complex
+marketing_abi_connect,Why are mentions of Quilmes more engaging when posted by verified authors compared to non-verified authors?,Complex
+marketing_abi_connect,Why has there been an increase in the number of mentions for Michelob Ultra with the classification 'surprise' in the last month?,Complex
+marketing_abi_connect,Why are mentions of Stella Artois with the engagement type 'comment' more likely to have a negative sentiment?,Complex
+maz_commercial,What is the total volume and revenue of Corona Extra brand in February 2023 and the corresponding percentage change from January to February?,Simple
+maz_commercial,"What is the net revenue per HL of Victoria brand in March 2023, and how does it compare to February 2023?",Simple
+maz_commercial,How does the sales volume of Michelob brand in the first quarter of 2023 compare to the fourth quarter of 2022?,Simple
+maz_commercial,Which distribution channel contributed the most to Modelo Especial's revenue in the second quarter of 2023?,Simple
+maz_commercial,What is the average volume per customer for Pacífico brand in the Norte region during the first half of 2023?,Simple
+maz_commercial,Identify the top three SKUs by volume for Bud Light in the Occidente region in July 2023.,Simple
+maz_commercial,Calculate the percentage change in volume for Negra Modelo across all regions from Q1 to Q2 in 2023.,Simple
+maz_commercial,Which brand had the highest percentage increase in net revenue per HL from Q3 to Q4 in 2023?,Simple
+maz_commercial,Compare the performance in volume and revenue of Cucapa brand in Central-Bajío vs. Sureste region in the third quarter of 2023.,Complex
+maz_commercial,What was the percentage distribution of sales volume for Barrilito brand across different sales areas in August 2023?,Simple
+maz_commercial,"How did the revenue of Corona Light change from February to March 2023, and what was the percentage change?",Simple
+maz_commercial,Which brand achieved the highest net revenue per HL in the Altiplano distribution center in the second quarter of 2023?,Simple
+maz_commercial,Identify the top-selling SKU for Victoria brand in terms of volume in the Occidente region in May 2023.,Simple
+maz_commercial,What is the percentage change in net revenue per HL for Michelob brand from Q1 to Q2 in 2023?,Simple
+maz_commercial,Analyze the sales volume trend of Modelo Especial from January to June 2023.,Simple
+maz_commercial,Which distribution channel saw the highest growth in revenue for Pacífico brand from Q2 to Q3 in 2023?,Simple
+maz_commercial,What is the average net revenue per HL for Bud Light across all regions in the first quarter of 2023?,Simple
+maz_commercial,Calculate the percentage change in sales volume for Negra Modelo in the Sureste region from March to April 2023.,Simple
+maz_commercial,Which brand's SKU had the highest sales volume in the CMM Metropolitana distribution center in July 2023?,Simple
+maz_commercial,How does the revenue of Corona Extra in the Central-Bajío region in Q2 2023 compare to Q1 2023?,Simple
+maz_commercial,What is the sales volume and revenue of Victoria in the Norte region for each month of Q2 2023?,Simple
+maz_commercial,Identify the brand with the lowest net revenue per HL in the Occidente region in the second half of 2023.,Simple
+maz_commercial,Calculate the percentage change in volume for Michelob across the Sureste region from Q3 to Q4 in 2023.,Simple
+maz_commercial,Which SKU of Modelo Especial had the highest growth in revenue from January to February 2023?,Simple
+maz_commercial,"What was the total volume sold of Pacífico in the Central-Bajío region in Q1 2023, and how does it compare to Q4 2022?",Simple
+maz_commercial,How has the average volume per customer for Bud Light changed from Q2 to Q3 in 2023?,Simple
+maz_commercial,Analyze the performance of Negra Modelo in terms of net revenue per HL across different distribution channels in Q3 2023.,Complex
+maz_commercial,Which brand had the highest sales volume in the CMM Occidente distribution center in the third quarter of 2023?,Simple
+maz_commercial,Calculate the percentage distribution of volume for Cucapa brand across the Norte and Sureste regions in June 2023.,Simple
+maz_commercial,What is the average net revenue per HL for Barrilito across all sales areas in Q2 2023?,Simple
+maz_commercial,Identify the top-performing SKU by revenue for Corona Light in the Occidente region in August 2023.,Simple
+maz_commercial,Compare the sales volume of Victoria brand in wholesale vs. retail distribution channels in Q1 2023.,Simple
+maz_commercial,What percentage of total revenue did Michelob contribute to in the CMM Altiplano distribution center in Q2 2023?,Simple
+maz_commercial,How did the sales volume of Modelo Especial change from Q3 to Q4 in 2023 in the Central-Bajío region?,Simple
+maz_commercial,What is the net revenue per HL for Pacífico in the Sureste region for each month of Q3 2023?,Simple
+maz_commercial,Which brand's SKU had the highest percentage increase in volume in the Norte region from February to March 2023?,Simple
+maz_commercial,Analyze the revenue trend of Bud Light from Q1 to Q2 2023 across all distribution channels.,Complex
+maz_commercial,What was the percentage change in net revenue per HL for Negra Modelo from January to February 2023?,Simple
+maz_commercial,Which distribution center reported the highest sales volume for Cucapa brand in Q4 2023?,Simple
+maz_commercial,How does the average volume per customer for Barrilito in the CMM Metropolitana compare to CMM Occidente in Q2 2023?,Simple
+maz_commercial,Identify the top three brands by net revenue in the Sureste region in Q1 2023.,Simple
+maz_commercial,What is the percentage distribution of sales volume for Corona Extra across different sales areas in July 2023?,Simple
+maz_commercial,Calculate the percentage change in revenue for Victoria brand from Q2 to Q3 in 2023 in the Occidente region.,Simple
+maz_commercial,Which SKU of Michelob had the highest growth in net revenue per HL from March to April 2023?,Simple
+maz_commercial,How did the sales volume of Modelo Especial in the wholesale distribution channel in Q2 2023 compare to Q1 2023?,Simple
+maz_commercial,"What was the total revenue generated by Pacífico in the Norte region in Q3 2023, and how does it compare to Q2 2023?",Simple
+maz_commercial,Analyze the performance of Bud Light in terms of net revenue per HL in the CMM Hidalgo distribution center in Q4 2023.,Simple
+maz_commercial,Which brand had the lowest sales volume in the CMM Del Bajío distribution center in the first half of 2023?,Simple
+maz_commercial,Calculate the percentage change in volume for Negra Modelo across the Central-Bajío and Norte regions from Q4 2022 to Q1 2023.,Simple
+maz_commercial,Identify the top-selling SKU for Cucapa brand in terms of revenue in the Sureste region in September 2023.,Simple
+marketing_abi_connect,What is the total number of social media mentions for Corona across all platforms in the last 3 months?,Simple
+marketing_abi_connect,How has the sentiment of mentions for Michelob Ultra changed from the first to the second quarter of 2023?,Simple
+marketing_abi_connect,Which content source has the highest number of engagements for Budweiser mentions in the last month?,Simple
+marketing_abi_connect,Compare the total number of likes for Stella Artois mentions on Instagram versus Twitter in the last quarter.,Simple
+marketing_abi_connect,What are the top 3 hashtags associated with Bud Light mentions on social media in the last 6 months?,Simple
+marketing_abi_connect,How do the total mentions of Aguila in Colombia compare to those in Brazil in the last quarter?,Simple
+marketing_abi_connect,Which brand had the highest increase in followers from mentions in the last 2 months?,Simple
+marketing_abi_connect,Identify the top 5 countries by number of mentions for Castle Lager in the last month.,Simple
+marketing_abi_connect,What is the ratio of positive to negative sentiment mentions for Brahma in the last quarter?,Simple
+marketing_abi_connect,Which brand witness the highest number of shares on Facebook in the last 3 months?,Simple
+marketing_abi_connect,Analyze the trend of interactions for Quilmes mentions on Twitter in the last 6 months.,Complex
+marketing_abi_connect,What is the average number of comments per mention for Pilsener across all social media platforms in the last quarter?,Simple
+marketing_abi_connect,Which brand has the highest engagement rate per mention on Instagram in the last 2 months?,Simple
+marketing_abi_connect,How does the sentiment of mentions for Budweiser on news platforms compare to social media platforms in the last month?,Simple
+marketing_abi_connect,Identify the engagement type with the highest occurrence for Corona mentions in the last quarter.,Simple
+marketing_abi_connect,"Which ABI zone had the most mentions of Michelob Ultra in the last 3 months, and how does it compare to the previous quarter?",Simple
+marketing_abi_connect,What is the impact score of mentions for Stella Artois on forums in the last month?,Simple
+marketing_abi_connect,How do the number of video views for Bud Light mentions on YouTube compare between the last two quarters?,Simple
+marketing_abi_connect,Which author has the highest number of mentions for any ABI brand in the last month?,Simple
+marketing_abi_connect,What is the total reach of Aguila mentions on Twitter in the last quarter?,Simple
+marketing_abi_connect,Analyze the distribution of sentiments across all mentions of Castle Lager in the last 6 months.,Simple
+marketing_abi_connect,Which country showed the highest engagement for Brahma mentions on Instagram in the last 2 months?,Simple
+marketing_abi_connect,Compare the number of impressions for Quilmes mentions between Facebook and Twitter in the last quarter.,Simple
+marketing_abi_connect,What is the total number of interactions for Pilsener mentions on social media in the last month?,Simple
+marketing_abi_connect,How has the number of likes for Budweiser mentions on Instagram changed from the last quarter to the current quarter?,Simple
+marketing_abi_connect,Identify the content source with the lowest engagement rate for Stella Artois mentions in the last 3 months.,Simple
+marketing_abi_connect,What is the average number of shares per mention for Corona on Facebook in the last month?,Simple
+marketing_abi_connect,How do the total mentions of Michelob Ultra in the USA compare to Mexico in the last quarter?,Simple
+marketing_abi_connect,Which hashtags are most frequently associated with negative sentiment mentions of Bud Light in the last 2 months?,Simple
+marketing_abi_connect,What is the percentage increase in followers from mentions of Aguila on Twitter in the last quarter?,Simple
+marketing_abi_connect,Analyze the correlation between the number of comments and the sentiment of mentions for Castle Lager in the last 6 months.,Complex
+marketing_abi_connect,Which brand had the highest number of retweets on Twitter in the last quarter?,Simple
+marketing_abi_connect,How does the gender distribution of authors mentioning Brahma on social media platforms look in the last month?,Simple
+marketing_abi_connect,"What is the total number of mentions for Quilmes in Argentina in the last 3 months, and how does it compare to the previous 3 months?",Simple
+marketing_abi_connect,Identify the top 3 countries by number of negative sentiment mentions for Pilsener in the last quarter.,Simple
+marketing_abi_connect,What is the average number of engagements per mention for Budweiser on Instagram in the last 2 months?,Simple
+marketing_abi_connect,Compare the total number of mentions for Stella Artois on news platforms versus social media platforms in the last quarter.,Simple
+marketing_abi_connect,How does the sentiment distribution for Corona mentions on Twitter compare to Instagram in the last month?,Simple
+marketing_abi_connect,What is the total number of video views for Michelob Ultra mentions on Facebook in the last quarter?,Simple
+marketing_abi_connect,Which brand has the highest number of mentions associated with the hashtag #easytocelebrate in the last 6 months?,Simple
+marketing_abi_connect,How do the number of likes for Aguila mentions on Instagram compare between the last two quarters?,Simple
+marketing_abi_connect,Identify the engagement type with the lowest occurrence for Castle Lager mentions in the last quarter.,Simple
+marketing_abi_connect,"Which ABI zone had the least mentions of Brahma in the last 3 months, and how does it compare to the previous quarter?",Simple
+marketing_abi_connect,What is the impact score of mentions for Quilmes on blogs in the last month?,Simple
+marketing_abi_connect,How do the number of video views for Pilsener mentions on YouTube compare between the last two quarters?,Simple
+marketing_abi_connect,Which author has the highest number of negative sentiment mentions for any ABI brand in the last month?,Simple
+marketing_abi_connect,What is the total reach of Budweiser mentions on Twitter in the last quarter?,Simple
+marketing_abi_connect,Analyze the distribution of sentiments across all mentions of Corona in the last 6 months.,Simple
+marketing_abi_connect,Which country showed the highest engagement for Michelob Ultra mentions on Instagram in the last 2 months?,Simple
+maz_commercial,How did the sales of brand Stella evolve over the period of last few months,Simple
+marketing_abi_connect,How did the mentions for brand Bud Light evolve on Twitter in past few months,Simple
