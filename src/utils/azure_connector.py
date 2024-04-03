@@ -7,10 +7,12 @@ from typing import Any, List
 from azure.identity import ClientSecretCredential
 from azure.storage.blob import BlobServiceClient
 
+from src.settings import LoggerSettings
+
 warnings.filterwarnings("ignore")
 
 # Contextlogger----
-logger = logging.getLogger("torch_classifier")
+logger = logging.getLogger(LoggerSettings().logger_name)
 
 SLEEP_TIME = 2
 
@@ -70,16 +72,16 @@ class AzureBlobConnection:
     def _blob_temp_downloads(
         self,
         root_path: str,
-        output_path: str,
+        local_output_path: str,
         container_client: Any,
         file_name: str,
     ):
-        os.makedirs(os.path.join(root_path, output_path), exist_ok=True)
+        os.makedirs(os.path.join(root_path, local_output_path), exist_ok=True)
         blob_client = container_client.get_blob_client(file_name)
         if blob_client.exists():
             logger.info("downloading the blob to local file")
             download_file_path = os.path.join(
-                root_path, output_path, os.path.basename(file_name)
+                root_path, local_output_path, os.path.basename(file_name)
             )
             logger.info("Downloaded file at:{}".format(download_file_path))
             self._download_blob(blob_client, download_file_path)
@@ -95,8 +97,8 @@ class AzureBlobConnection:
         self,
         container_name: str,
         root_path: str,
-        output_path: str,
-        blob_prefix: str = None,
+        local_output_path: str,
+        blob_path: str = None,
         file_names: List[str] = None,
     ):
         logger.info("Mode of Source selected is Azure Blob")
@@ -108,7 +110,7 @@ class AzureBlobConnection:
                 raise ValueError("Source Container not found.")
 
             blob_list = container_client.list_blobs()
-            file_list = [blob.name for blob in blob_list if blob_prefix in blob.name]
+            file_list = [blob.name for blob in blob_list if blob_path in blob.name]
             if file_names:
                 file_list = [
                     file for file in file_list if os.path.basename(file) in file_names
@@ -116,7 +118,7 @@ class AzureBlobConnection:
 
             for file_name in file_list:
                 self._blob_temp_downloads(
-                    root_path, output_path, container_client, file_name
+                    root_path, local_output_path, container_client, file_name
                 )
 
             logger.info(
@@ -128,16 +130,14 @@ class AzureBlobConnection:
     def _temp_blob_upload(
         self,
         root_path: str,
-        input_path: str,
-        blob_prefix: str,
+        local_input_path: str,
+        blob_path: str,
         local_file_name: str,
         container_name: str,
     ):
-        upload_file_path = os.path.join(root_path, input_path, local_file_name)
+        upload_file_path = os.path.join(root_path, local_input_path, local_file_name)
         blob_name = (
-            os.path.join(blob_prefix, local_file_name)
-            if blob_prefix
-            else local_file_name
+            os.path.join(blob_path, local_file_name) if blob_path else local_file_name
         )
         blob_client = self.blob_service_client.get_blob_client(
             container=container_name, blob=blob_name
@@ -149,9 +149,9 @@ class AzureBlobConnection:
         self,
         container_name: str,
         root_path: str,
-        input_path: str,
+        local_input_path: str,
         file_names: List[str],
-        blob_prefix: str = None,
+        blob_path: str = None,
     ):
         logger.info("Mode of Source selected is Azure Blob for files upload")
         try:
@@ -163,15 +163,19 @@ class AzureBlobConnection:
 
             if len(file_names) == 0:
                 logger.info("No files specified explicitely, so taking all files ")
-                file_names = os.listdir(os.path.join(root_path, input_path))
+                file_names = os.listdir(os.path.join(root_path, local_input_path))
 
             for local_file_name in file_names:
                 self._temp_blob_upload(
-                    root_path, input_path, blob_prefix, local_file_name, container_name
+                    root_path,
+                    local_input_path,
+                    blob_path,
+                    local_file_name,
+                    container_name,
                 )
                 time.sleep(SLEEP_TIME)
                 logger.info(
-                    f"Have successfully pushed file {local_file_name} in blob {blob_prefix} "
+                    f"Have successfully pushed file {local_file_name} in blob {blob_path} "
                     f"in container {container_name}"
                 )
         except Exception as ex:

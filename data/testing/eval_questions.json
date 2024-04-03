@@ -1,0 +1,21 @@
+
+{
+    "questions": [
+        "What was the sales for brand Hurricane in India?",
+        "How did the sales for brand Hurricane changed over last one year?",
+        "Explain how has the impact on water shortage on the production of beer in India?",
+        "How is the performance of Classic lager segment in LP TY compared to LP YA?",
+        "Detail the reasons for drop in sales for brand Corona in the west?",
+        "How did the sales evolved for brand Jupiter over the period of last 6 months?",
+        "Explain in details the reasons for the abrupt changes in sales pattern of Becks in Asian markets?"
+    ],
+    "targets": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+    ]
+}
