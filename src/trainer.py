@@ -55,6 +55,7 @@ def train_module(
         # backpropagation
         optimizer.zero_grad()  # flush out  existing grads
         loss.backward()  # back prop of weights wrt loss
+        
         # gradient clipping -- prevent gradient explosion
         nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 

@@ -1,4 +1,3 @@
-
 {
     "questions": [
         "What was the sales for brand Hurricane in India?",
@@ -7,7 +6,9 @@
         "How is the performance of Classic lager segment in LP TY compared to LP YA?",
         "Detail the reasons for drop in sales for brand Corona in the west?",
         "How did the sales evolved for brand Jupiter over the period of last 6 months?",
-        "Explain in details the reasons for the abrupt changes in sales pattern of Becks in Asian markets?"
+        "Explain in details the reasons for the abrupt changes in sales pattern of Becks in Asian markets?",
+        "What are the factors for difference the volume trend of bud light vs corona across US regions in 2023?",
+        "Analyze the volume trend of bud light vs corona across US regions in 2023?"
     ],
     "targets": [
         0,
@@ -16,6 +17,8 @@
         1,
         1,
         0,
-        1
+        1,
+        1,
+        0
     ]
 }
