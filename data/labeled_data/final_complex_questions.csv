@@ -1,0 +1,75 @@
+﻿Domain,Question,FinalLabel
+maz_commercial,Why did the sales volume for the Premium price segment experience a significant change in the Occidente region during July 2023?,Complex
+maz_commercial,Why is the sales volume per customer higher for Corona Light in Occidente compared to Norte region in the second quarter of 2023?,Complex
+maz_commercial,Why did the net revenue per HL for Victoria brand see a decrease in the Central-Bajío region from March to April 2023?,Complex
+maz_commercial,Analyze the performance of the Superpremium price segment in terms of Net Revenue per HL across different regions? ,Complex
+maz_commercial,What was the impact on Net Revenue per HL when comparing the Craft price segment between Q1 and Q2 in 2023?,Complex
+maz_commercial,Which brand showed the highest percentage change in Net Revenue per HL from January to February 2023?,Complex
+maz_commercial,Identify the SKU with the lowest sales volume in the Superpremium segment in April 2023 in the Central-Bajío region and determine the reason for its performance.,Complex
+maz_commercial,Determine the key factors contributing to the success of top performing brand in terms of volume in the Norte region?,Complex
+maz_commercial,Find out whether any brand has shown a consistent increase in sales volume over the first two quarters of 2023 in the Norte region and what strategies might have contributed to this growth?,Complex
+maz_commercial,Why is Bud Lights net revenue lowest in a particular month?,Complex
+maz_commercial,Why is the percentage change in revenue for the Core segment highest in the Norte region from July to August 2023?,Complex
+maz_commercial,Why does the distribution channel 01 have a higher revenue generation for Pacifico compared to channel 02?,Complex
+maz_commercial,Among the Premium and Superpremium price segments which had a higher net revenue per HL in Q2 2023 and by what percentage did it exceed the other?,Complex
+maz_commercial,Identify the top 3 brands in terms of net revenue in the Central-Bajío region in Q2 2023 and discuss the reasons for their success.,Complex
+maz_commercial,Which region saw the largest growth in number of customers for ABInBev products from Q1 to Q2 in 2023 and what drove this increase?,Complex
+maz_commercial,What were the top performing SKUs for ABInBev in terms of volume in the Sureste region and what marketing strategies were employed?,Complex
+maz_commercial,Analyze the performance of ABInBev Core segment in Mexico in Q2 2023 compared to Q1 2023 in terms of percentage change in revenue.,Complex
+maz_commercial,Examine the variances in net revenue per hectoliter for the Corona Extra brand between the first and second quarters of 2023 and identify the contributing factors to any observed fluctuation. ,Complex
+maz_commercial,Tell me the implications of regional preferences on strategic distribution planning. ,Complex
+maz_commercial,Explain the comparative dynamics of revenue generation between the premium and core segments within the ABInBev portfolio throughout 2023,Complex
+maz_commercial,Identify the factors contributing to the sales volume leadership of the Victoria brand within the central-bajío region. ,Complex
+maz_commercial,Why there is disparities in sales volume and net revenue between the top SKUs within the Core Plus segment in 2023.,Complex
+maz_commercial,How does the distribution channel (wholesale or retail) impacts the generation of revenue for the Core price segment,Complex
+maz_commercial,Why did the superpremium segment experience a change in volume contribution from Occidente region between two consecutive quarters in 2023?,Complex
+cpna,Examine why there is a variation in volume sales of the Classic Lager segment across different areas during MAT TY.,Complex
+cpna,Explore why the MORETTI brand has differing value market shares between Area 1 and Area 3 during MAT TY. ,Complex
+cpna,Investigate why the promo volume of the IPA segment in the Omnichannel market differs significantly between YTD TY and YTD YA. ,Complex
+cpna,Identify reasons why the price to consumer for the STRONG BLONDE segment varies across manufacturers in LP TY. ,Complex
+cpna,Analyze reasons behind the change in volume market share of CERES brand in the Discount channel from YTD TY to YTD YA. ,Complex
+cpna,Determine why there is a disparity in promo value market share for PERONI across Hypermarkets and Supermarkets during MAT TY. ,Complex
+cpna,Uncover why the weighted distribution for HEINEKEN in the Omnichannel market shows a decline from LP YA to LP TY. ,Complex
+cpna,Explore factors leading to a decrease in value sales for BIRRA/LEMON sub-brand in Area 4 across time periods LP TY versus LP YA. ,Complex
+cpna,Evaluate why volume sales for pack type VET have shown an increase in Area 2 during MAT TY. ,Complex
+cpna,Question why the percentage change in volume for the WHEAT BEERS segment across Area 1 and Area 3 differs during YTD TY. ,Complex
+cpna,Explore the reason behind the fluctuation in value per change year ago figures for the PLF brand across different areas during MAT YA. ,Complex
+cpna,Examine the cause behind variations in volume market share for NASTRO AZZURRO between Area 1 and Area 2 in MAT TY. ,Complex
+cpna,Assess why promotional strategies have different impacts on PLT brands market share across Area 1 Area 2 and Area 3. ,Complex
+cpna,Understand why the price to consumer for the LAGER segment shows a significant difference across manufacturers during LP TY. ,Complex
+cpna,Explain why there is a significant difference in volume sales year ago figures for the IPA segment between Area 2 and Area 4. ,Complex
+cpna,Understand the reasons behind the different volume sales for PERONI across Hypermarkets and Selfserve during LP TY.,Complex
+cpna,Analyze the effectiveness of promotional strategies on the HEINEKEN brand volume sales in the Omnichannel market from LP YA to LP TY.,Complex
+cpna,How does the promotional strategy impact the volume sales and market share of MENABREA in Area 1 during MAT YA? ,Complex
+cpna,Analyze the effect of time periods on the value market share for the IPA segment across different areas. ,Complex
+cpna,Examine how pack types influence promo volume and volume market share for MORETTI brand in Area 2 during MAT TY. ,Complex
+cpna,Identify the trends in weighted distribution of PERONI across Superettes Hypermarkets and Discounters during YTD YA. ,Complex
+cpna,Compare the percentage change in volume and value sales for CERES brand in the FLAVORED segment across Area 1 and Area 3 during MAT TY.,Complex
+cpna,Analyze the factors leading to a decrease in volume market share for CLASSIC LAGER across different areas from YTD YA to YTD TY. ,Complex
+cpna,Examine the reason behind the increase in volume sales for the NABLAB segment in the Omnichannel market during LP TY. ,Complex
+cpna,Analyze why the value share of the FLAVORED segment in Area 3 has seen a decline from LP YA to LP TY. ,Complex
+marketing_abi_connect,Why did Corona beer mentions have a predominantly positive sentiment in the United States in the last quarter of 2023?,Complex
+marketing_abi_connect,Why were female authors talking more positively about Michelob Ultra in the AFR zone during December 2023?,Complex
+marketing_abi_connect,Why did mentions with the hashtag #easytocelebrate have more interactions compared to other hashtags for Bud Light in the last 3 months?,Complex
+marketing_abi_connect,Examine the correlation between account type (individual vs organizational) and the sentiment (positive negative) of posts mentioning Stella Artois on social media platforms in Q4 2023.,Complex
+marketing_abi_connect,Why did the mentions of Castle beer in South Africa have a higher reach and impressions in November 2023 compared to October 2023?,Complex
+marketing_abi_connect,Compare the engagement types (likes shares comments) that led to the highest reach for Michelob Ultra mentions on Instagram and Twitter in the last month of 2023.,Complex
+marketing_abi_connect,Determine the correlation between the number of followers of authors and the engagement (likes shares comments) their posts receive for Bud Light across all social media platforms in November 2023.,Complex
+marketing_abi_connect,Investigate the difference in sentiment distribution for posts made by individual versus organisational account types about Brahma in Brazil in Q4 2023.,Complex
+marketing_abi_connect,Assess the effectiveness of different engagement types in influencing the overall sentiment for Pilsener mentions in Ecuador during February 2024.,Complex
+marketing_abi_connect,Determine which country exhibited the most negative sentiment towards Budweiser and investigate the primary reasons behind this sentiment in Q4 2023.,Complex
+marketing_abi_connect,Assess the impact of language on the sentiment of Corona beer mentions across different countries in the last three months of 2023.,Complex
+marketing_abi_connect,Analyze the trend of monthly visitor count from blogs mentioning Stella Artois in Q1 2023?,Complex
+marketing_abi_connect,Examine the factors contributing to the high reach of Quilmes mentions on social media platforms in Argentina during Q4 2023.,Complex
+marketing_abi_connect,Assess the impact of political interests of authors on the sentiment and engagement of Bud Light mentions in the United States during the presidential inauguration month in January 2024.,Complex
+marketing_abi_connect,Why did the reach of positive mentions about Corona beer increase significantly in Brazil during the Carnival season of 2024? ,Complex
+marketing_abi_connect,What were the common topics of discussion in negative mentions of Brahma beer in Brazil during Q4 2023? ,Complex
+marketing_abi_connect,What insights can be drawn from the use of specific hashtags in positively mentioned posts about Michelob Ultra in South Africa in the last month of 2023? ,Complex
+marketing_abi_connect,Identify trends in the sentiments of mentions for Bud Light by gender in the United Kingdom in the last quarter of 2023. ,Complex
+marketing_abi_connect,What impact did verified authors have on the spread of negative sentiment towards Pilsener in Japan in the last month of 2023? ,Complex
+marketing_abi_connect,How do the themes of discussion in mentions of Aguila beer on Facebook vary with sentiment in Colombia in December 2023? ,Complex
+marketing_abi_connect,Analyze the impact of negative mentions on the overall brand perception of Budweiser in social media conversations in Germany in the last quarter of 2023.,Complex
+marketing_abi_connect,What are the prevalent sentiments and key topics in mentions of Corona beer across different forums and news sources in Mexico in December 2023?  ,Complex
+marketing_abi_connect,Assess the role of gender in shaping the sentiment and engagement levels of posts about Aguila beer in Colombia during the last quarter of 2023. ,Complex
+marketing_abi_connect,Investigate the effect of monthly visitors on the reach and engagement rates of social media posts mentioning Stella Artois in the last month of 2023.,Complex
+marketing_abi_connect,Understand the difference in sentiment towards Budweiser based on the type of publication (news vs social media) in Germany during January 2024.,Complex
