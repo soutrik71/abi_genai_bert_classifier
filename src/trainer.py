@@ -1,4 +1,5 @@
 import logging
+import warnings
 
 import numpy as np
 import torch
@@ -9,6 +10,8 @@ from transformers import AdamW, get_linear_schedule_with_warmup
 
 from src.settings import LoggerSettings
 from src.utils.model_helpers import EarlyStopping
+
+warnings.filterwarnings("ignore")
 
 logger = logging.getLogger(LoggerSettings().logger_name)
 
@@ -55,7 +58,7 @@ def train_module(
         # backpropagation
         optimizer.zero_grad()  # flush out  existing grads
         loss.backward()  # back prop of weights wrt loss
-        
+
         # gradient clipping -- prevent gradient explosion
         nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 
