@@ -15,7 +15,7 @@ def show_about():
 
     def bash(command):
         output = os.popen(command).read()
-        return output
+        return str(output)
 
     return {
         "sys.version": sys.version,

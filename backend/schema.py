@@ -16,7 +16,7 @@ class InferenceResult(BaseModel):
     Inference result from the model
     """
 
-    model_output: Dict[str, Dict[str, float]]
+    model_output: Dict[str, Any] = Field(..., title="Model output")
 
 
 class InferenceResponse(BaseModel):
@@ -25,4 +25,4 @@ class InferenceResponse(BaseModel):
     """
 
     error: bool = Field(..., example=False, title="Whether there is error")
-    results: InferenceResult = ...
+    results: InferenceResult

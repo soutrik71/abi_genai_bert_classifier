@@ -2,7 +2,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.routes import prediction, system_info
+from backend.routes import prediction, system_info, test
 
 # Initialize API Server
 app = FastAPI(
@@ -24,15 +24,16 @@ app.add_middleware(
 )
 
 # Include routers in the API
-app.include_router(prediction.router)
+# app.include_router(prediction.router)
 app.include_router(system_info.router)
+app.include_router(test.router)
 
 
 if __name__ == "__main__":
     # server api
     uvicorn.run(
         "main:app",
-        host="127.0.0.1",
+        host="0.0.0.0",
         port=8080,
         reload=True,
     )
