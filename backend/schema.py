@@ -1,22 +1,15 @@
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 
-from pydantic.v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 
 
 class InferenceInput(BaseModel):
-    """
-    Input values for model inference
-    """
-
-    user_query: str = Field(..., title="User query")
+    user_query: Union[str, None]
 
 
 class InferenceResult(BaseModel):
-    """
-    Inference result from the model
-    """
-
-    model_output: Dict[str, Any] = Field(..., title="Model output")
+    label: Union[str, None]
+    prob: Union[float, None]
 
 
 class InferenceResponse(BaseModel):
@@ -24,5 +17,5 @@ class InferenceResponse(BaseModel):
     Output response for model inference
     """
 
-    error: bool = Field(..., example=False, title="Whether there is error")
+    error: Union[bool, None]
     results: InferenceResult

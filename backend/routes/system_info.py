@@ -2,12 +2,13 @@ import os
 import sys
 
 import torch
+import transformers
 from fastapi import APIRouter
 
 router = APIRouter()
 
 
-@router.get("/about")
+@router.get("/api/about")
 def show_about():
     """
     Get deployment information, for debugging
@@ -20,6 +21,7 @@ def show_about():
     return {
         "sys.version": sys.version,
         "torch.__version__": torch.__version__,
+        "transformers.__version__": transformers.__version__,
         "torch.cuda.is_available()": torch.cuda.is_available(),
         "torch.version.cuda": torch.version.cuda,
         "torch.backends.cudnn.version()": torch.backends.cudnn.version(),

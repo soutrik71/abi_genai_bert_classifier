@@ -1,20 +1,18 @@
-from fastapi import APIRouter, status
+from fastapi import APIRouter, Body, status
 
-from backend.schema import InferenceInput, InferenceResult
+from backend.schema import InferenceInput, InferenceResponse
 from src.test_code import dummy_prediction
 
 router = APIRouter()
 
 
 @router.post(
-    "/api/predict", response_model=InferenceResult, status_code=status.HTTP_200_OK
+    "/api/predict", response_model=InferenceResponse, status_code=status.HTTP_200_OK
 )
 def do_predict(user_query: InferenceInput):
     """
     Perform prediction on input data
     """
     # Perform prediction on input data
-    print(user_query)
     results = dummy_prediction(user_query)
-
-    return results
+    return InferenceResponse(**results)

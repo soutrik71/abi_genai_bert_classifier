@@ -15,6 +15,7 @@ app = FastAPI(
 )
 
 # Add CORS middleware
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -24,10 +25,10 @@ app.add_middleware(
 )
 
 # Include routers in the API
-# app.include_router(prediction.router)
+
 app.include_router(system_info.router)
 app.include_router(test.router)
-
+app.include_router(prediction.router)
 
 if __name__ == "__main__":
     # server api
