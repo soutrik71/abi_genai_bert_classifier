@@ -58,3 +58,22 @@ async def get_chat_by_chatid(db_session: AsyncSession, chat_id: uuid.UUID):
         raise HTTPException(status_code=404, detail="Chat record not found")
 
     return record
+
+
+async def delete_chat_by_chatid(db_session: AsyncSession, chat_id: uuid.UUID):
+    record = (
+        (
+            await db_session.execute(
+                select(ChatRecord).filter(ChatRecord.chat_id == chat_id)
+            )
+        )
+        .scalars()
+        .first()
+    )
+
+    if not record:
+        raise HTTPException(status_code=404, detail="Chat record not found")
+
+    db_session.delete(record)
+    await db_session.commit()
+    return record

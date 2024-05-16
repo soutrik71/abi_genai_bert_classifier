@@ -134,7 +134,7 @@ class ModelInference:
                     [
                         "user_query",
                         "prediction_class",
-                        "prediction_prob",
+                        "prediction_probability",
                         "prediction_label",
                     ],
                     [
