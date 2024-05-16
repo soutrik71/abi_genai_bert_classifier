@@ -1,6 +1,6 @@
 from fastapi import APIRouter, status
 
-from backend.schema import ErrorResponse
+from backend.schemas.input import ErrorResponse
 
 import logging
 from src.settings import LoggerSettings

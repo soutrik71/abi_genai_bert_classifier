@@ -2,7 +2,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.routes import prediction, system_info, status_check
+from backend.routes import prediction, system_info, status_check, chat
 from src.model_startup import model_startup
 from contextlib import asynccontextmanager
 
@@ -20,12 +20,12 @@ logger = setup_logging(
 
 
 # Initialize the model startup context manager
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    logger.info("Executing Startup file")
-    model = model_startup()
-    app.state.model = model
-    yield
+# @asynccontextmanager
+# async def lifespan(app: FastAPI):
+#     logger.info("Executing Startup file")
+#     model = model_startup()
+#     app.state.model = model
+#     yield
 
 
 # Initialize API Server
@@ -36,7 +36,7 @@ app = FastAPI(
     terms_of_service=None,
     contact=None,
     license_info=None,
-    lifespan=lifespan,
+    # lifespan=lifespan,
 )
 
 # Add CORS middleware
@@ -47,6 +47,7 @@ app.add_middleware(
     allow_headers=["*"],
     allow_credentials=True,
 )
+
 
 # adding time middleware
 @app.middleware("http")
@@ -61,7 +62,8 @@ async def add_process_time_header(request, call_next):
 # Include routers in the API
 app.include_router(status_check.router)
 app.include_router(system_info.router)
-app.include_router(prediction.router)
+app.include_router(chat.router)
+# app.include_router(prediction.router)
 
 if __name__ == "__main__":
     # server api

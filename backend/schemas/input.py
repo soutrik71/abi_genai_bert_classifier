@@ -1,9 +1,18 @@
 from typing import Any, Dict, List, Optional, Union
 from pydantic import BaseModel, Field
+import uuid
 
 
-class InferenceInput(BaseModel):
+class UserInput(BaseModel):
     user_query: Union[str, None]
+    session_id: Union[uuid.UUID, None]
+
+
+class UserInputShow(UserInput):
+    chat_id: Union[uuid.UUID, None]
+    status: Union[str, None]
+    prediction_label: Union[str, None]
+    prediction_probability: Union[float, None]
 
 
 class InferenceResult(BaseModel):
