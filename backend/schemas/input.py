@@ -3,23 +3,19 @@ from pydantic import BaseModel, Field
 import uuid
 
 
-class UserInput(BaseModel):
+class UserInputCreate(BaseModel):
     user_query: Union[str, None]
     session_id: Union[uuid.UUID, None]
 
 
-class UserInputShow(UserInput):
+class UserInputShow(UserInputCreate):
     chat_id: Union[uuid.UUID, None]
     status: Union[str, None]
+
+
+class PredictionInputShow(UserInputShow):
     prediction_label: Union[str, None]
     prediction_probability: Union[float, None]
-
-
-class InferenceResult(BaseModel):
-    prediction_label: Union[str, None]
-    prediction_prob: Union[float, None]
-    user_query: Union[str, None]
-    prediction_class: Union[int, None]
 
 
 class InferenceResponse(BaseModel):
@@ -28,7 +24,7 @@ class InferenceResponse(BaseModel):
     """
 
     error: Optional[bool]
-    results: InferenceResult
+    results: PredictionInputShow
 
 
 class ErrorResponse(BaseModel):

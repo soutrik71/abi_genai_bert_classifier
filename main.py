@@ -2,8 +2,10 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from backend.db import sessionmanager, Base
 from backend.routes import prediction, system_info, status_check, chat
-from src.model_startup import model_startup
+
+# from src.model_startup import model_startup
 from contextlib import asynccontextmanager
 
 from src.settings import (
@@ -11,6 +13,7 @@ from src.settings import (
 )
 from src.utils.logger import setup_logging
 import time
+
 
 logger = setup_logging(
     logger_name=LoggerSettings().logger_name,
@@ -47,6 +50,14 @@ app.add_middleware(
     allow_headers=["*"],
     allow_credentials=True,
 )
+
+
+@app.on_event("startup")
+async def startup_event():
+    logger.info("Creating DB Records")
+    async with sessionmanager._engine.begin() as conn:
+        # await conn.run_sync(Base.metadata.drop_all)
+        await conn.run_sync(Base.metadata.create_all)
 
 
 # adding time middleware

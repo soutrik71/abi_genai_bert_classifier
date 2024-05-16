@@ -1,6 +1,6 @@
 from fastapi import APIRouter, status, Request
 
-from backend.schemas.input import UserInput, InferenceResponse, ErrorResponse
+from backend.schemas.input import UserInputCreate, PredictionInputShow, ErrorResponse
 import logging
 from src.settings import LoggerSettings
 
@@ -12,11 +12,11 @@ router = APIRouter()
 
 @router.post(
     "/api/predict",
-    response_model=InferenceResponse,
+    response_model=PredictionInputShow,
     status_code=status.HTTP_200_OK,
     responses={422: {"model": ErrorResponse}, 500: {"model": ErrorResponse}},
 )
-async def do_predict(request: Request, user_query: UserInput):
+async def do_predict(request: Request, user_query: UserInputCreate):
     """
     Perform prediction on input data using the model loaded in the app state
     """
@@ -28,4 +28,4 @@ async def do_predict(request: Request, user_query: UserInput):
     results = model.predict(user_query.user_query)
     logger.info("Publishing results")
     results = {"error": False, "results": results}
-    return InferenceResponse(**results)
+    return PredictionInputShow(**results)
