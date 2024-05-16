@@ -2,7 +2,6 @@ import glob
 import logging
 import os
 import warnings
-
 import numpy as np
 import torch
 
@@ -14,6 +13,7 @@ from src.settings import (
     LoggerSettings,
     ModelSettings,
     TokenizerSettings,
+    env_settings,
 )
 from src.utils.model_helpers import get_device
 
@@ -39,7 +39,7 @@ class ModelInference:
     def __init__(
         self,
         tokenizer=tokenizer,
-        model_type="advanced",
+        model_type=env_settings.MODEL_TYPE,
         model=pretrained_model,
         max_len=TokenizerSettings().max_length,
         prob_thresh=ModelSettings().binary_thresh,
@@ -78,6 +78,7 @@ class ModelInference:
 
     def _get_predictions(self, data_loader, model):
         """Returns only the predicted labels for the given data loader"""
+
         review_texts = []
         predictions = []
         prediction_probs = []
@@ -112,9 +113,10 @@ class ModelInference:
 
     def predict(self, user_query):
         """Returns the predicted labels for the given data loader"""
+
         logger.info(f"Predicting labels for query: {user_query}")
         query_loader = create_data_loader(
-            question=[user_query],
+            question=[user_query] if isinstance(user_query, str) else user_query,
             targets=None,
             max_len=self.max_len,
             batch_size=1,
@@ -126,16 +128,40 @@ class ModelInference:
             model=self.bert_classifier,
         )
 
-        return dict(
-            zip(
-                review_texts,
-                [
-                    dict(
-                        zip(
-                            ["label", "prob"],
-                            [predictions.tolist()[0], prediction_probs.tolist()[0]],
-                        )
-                    )
-                ],
+        if isinstance(user_query, str):
+            return dict(
+                zip(
+                    [
+                        "user_query",
+                        "prediction_class",
+                        "prediction_prob",
+                        "prediction_label",
+                    ],
+                    [
+                        review_texts[0],
+                        int(predictions.tolist()[0]),
+                        prediction_probs.tolist()[0],
+                        "SIMPLE" if predictions.tolist()[0] == 0 else "COMPLEX",
+                    ],
+                )
             )
-        )
+        elif isinstance(user_query, list):
+            return [
+                dict(
+                    zip(
+                        [
+                            "user_query",
+                            "prediction_class",
+                            "prediction_prob",
+                            "prediction_label",
+                        ],
+                        [
+                            review_texts[i],
+                            int(predictions.tolist()[i]),
+                            prediction_probs.tolist()[i],
+                            "SIMPLE" if predictions.tolist()[i] == 0 else "COMPLEX",
+                        ],
+                    )
+                )
+                for i in range(len(user_query))
+            ]

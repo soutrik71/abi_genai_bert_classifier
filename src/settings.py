@@ -1,6 +1,9 @@
 import logging
-
+import os
 from pydantic_settings import BaseSettings, SettingsConfigDict
+import warnings
+
+warnings.filterwarnings("ignore")
 
 
 class Settings(BaseSettings):
@@ -24,7 +27,6 @@ class ModelSettings(BaseSettings):
     num_classes: int = 1
     drop_out: float = 0.3
     binary_thresh: float = 0.7
-    model_type: str = "advanced"
 
 
 class DataSettings(BaseSettings):

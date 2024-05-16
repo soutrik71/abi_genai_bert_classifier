@@ -1,5 +1,9 @@
 import torch
 from torch.utils.data import DataLoader, Dataset
+import logging
+from src.settings import LoggerSettings
+
+logger = logging.getLogger(LoggerSettings().logger_name)
 
 
 class QuestionClassficationDataset(Dataset):
@@ -57,6 +61,8 @@ def create_data_loader(
     pin_memory=True,
     tokenizer=None,
 ):
+    logger.info(f"Creating data loader with batch size: {batch_size}")
+
     dataset = QuestionClassficationDataset(
         question=question,
         targets=targets,

@@ -1,5 +1,4 @@
 from typing import Any, Dict, List, Optional, Union
-
 from pydantic import BaseModel, Field
 
 
@@ -8,8 +7,10 @@ class InferenceInput(BaseModel):
 
 
 class InferenceResult(BaseModel):
-    label: Union[str, None]
-    prob: Union[float, None]
+    prediction_label: Union[str, None]
+    prediction_prob: Union[float, None]
+    user_query: Union[str, None]
+    prediction_class: Union[int, None]
 
 
 class InferenceResponse(BaseModel):
@@ -17,5 +18,15 @@ class InferenceResponse(BaseModel):
     Output response for model inference
     """
 
-    error: Union[bool, None]
+    error: Optional[bool]
     results: InferenceResult
+
+
+class ErrorResponse(BaseModel):
+    """
+    Error response for the API
+    """
+
+    error: bool | None
+    message: str | None
+    traceback: str | None

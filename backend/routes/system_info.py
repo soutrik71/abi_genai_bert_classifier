@@ -4,15 +4,21 @@ import sys
 import torch
 import transformers
 from fastapi import APIRouter
+import logging
+from src.settings import LoggerSettings
+
+logger = logging.getLogger(LoggerSettings().logger_name)
+
 
 router = APIRouter()
 
 
 @router.get("/api/about")
-def show_about():
+async def show_about():
     """
     Get deployment information, for debugging
     """
+    logger.info("About API")
 
     def bash(command):
         output = os.popen(command).read()

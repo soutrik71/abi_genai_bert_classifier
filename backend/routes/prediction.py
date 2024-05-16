@@ -1,18 +1,31 @@
-from fastapi import APIRouter, Body, status
+from fastapi import APIRouter, status, Request
 
-from backend.schema import InferenceInput, InferenceResponse
-from src.test_code import dummy_prediction
+from backend.schema import InferenceInput, InferenceResponse, ErrorResponse
+import logging
+from src.settings import LoggerSettings
+
+logger = logging.getLogger(LoggerSettings().logger_name)
+
 
 router = APIRouter()
 
 
 @router.post(
-    "/api/predict", response_model=InferenceResponse, status_code=status.HTTP_200_OK
+    "/api/predict",
+    response_model=InferenceResponse,
+    status_code=status.HTTP_200_OK,
+    responses={422: {"model": ErrorResponse}, 500: {"model": ErrorResponse}},
 )
-def do_predict(user_query: InferenceInput):
+async def do_predict(request: Request, user_query: InferenceInput):
     """
-    Perform prediction on input data
+    Perform prediction on input data using the model loaded in the app state
     """
+    logger.info(f"Received user query: {user_query.user_query}")
+    # extract model from app state
+    model = request.app.state.model
     # Perform prediction on input data
-    results = dummy_prediction(user_query)
+    logger.info("Performing prediction on user query")
+    results = model.predict(user_query.user_query)
+    logger.info("Publishing results")
+    results = {"error": False, "results": results}
     return InferenceResponse(**results)
