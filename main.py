@@ -13,7 +13,8 @@ from src.settings import (
 )
 from src.utils.logger import setup_logging
 import time
-
+from src.utils.redis_connect import _get_redis_url
+from redis import asyncio as aioredis
 
 logger = setup_logging(
     logger_name=LoggerSettings().logger_name,
@@ -28,6 +29,7 @@ async def lifespan(app: FastAPI):
     logger.info("Executing Model Startup")
     model = model_startup()
     app.state.model = model
+
     logger.info("Creating DB Tables")
     async with sessionmanager._engine.begin() as conn:
         # await conn.run_sync(Base.metadata.drop_all)

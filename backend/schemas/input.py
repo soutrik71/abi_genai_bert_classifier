@@ -18,13 +18,13 @@ class PredictionInputShow(UserInputShow):
     prediction_probability: Union[float, None]
 
 
-class InferenceResponse(BaseModel):
-    """
-    Output response for model inference
-    """
+# class InferenceResponse(BaseModel):
+#     """
+#     Output response for model inference
+#     """
 
-    error: Optional[bool]
-    results: PredictionInputShow
+#     error: Optional[bool]
+#     results: PredictionInputShow
 
 
 class ErrorResponse(BaseModel):
