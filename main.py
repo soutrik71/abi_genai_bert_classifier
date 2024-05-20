@@ -1,21 +1,32 @@
+"""
+Main API Endpoint for the Question Classifier API.
+This file initializes the FastAPI server and includes the routers for the API.
+The startup event initializes the database tables and the model.
+
+The API includes the following routers:
+1. status_check: A router to check the status of the API.
+2. system_info: A router to get system information.
+3. chat: A router to interact with the chat records in the database.
+4. prediction: A router to perform predictions using the loaded model.
+
+The API server is started using the uvicorn library.
+"""
+
+import time
+from contextlib import asynccontextmanager
+
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.db import sessionmanager, Base
 from backend.routes import prediction, system_info, status_check, chat
-
 from src.model_startup import model_startup
-from contextlib import asynccontextmanager
-
-from src.settings import (
-    LoggerSettings,
-)
+from src.settings import LoggerSettings
 from src.utils.logger import setup_logging
-import time
-from src.utils.redis_connect import _get_redis_url
-from redis import asyncio as aioredis
+from cachetools import TTLCache
 
+# Setup logging
 logger = setup_logging(
     logger_name=LoggerSettings().logger_name,
     log_file="ModelApiEndpoint.log",
@@ -26,25 +37,32 @@ logger = setup_logging(
 # Initialize the model startup context manager
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    """
+    Initialize the model and create the database tables on startup of the API server,
+    and create a cache.
+    """
     logger.info("Executing Model Startup")
     model = model_startup()
     app.state.model = model
 
     logger.info("Creating DB Tables")
     async with sessionmanager._engine.begin() as conn:
-        # await conn.run_sync(Base.metadata.drop_all)
+        await conn.run_sync(Base.metadata.drop_all)
         await conn.run_sync(Base.metadata.create_all)
+
+    logger.info(
+        "Initializing cache with a maximum size of 100 entries and a TTL of 60 seconds"
+    )
+    app.state.cache = TTLCache(maxsize=100, ttl=60)
+
     yield
 
 
 # Initialize API Server
 app = FastAPI(
-    title="ML Model",
-    description="Description of the ML Model",
+    title="Question Bert-Classifier",
+    description="Question Classifier API Endpoint",
     version="0.0.1",
-    terms_of_service=None,
-    contact=None,
-    license_info=None,
     lifespan=lifespan,
 )
 
@@ -58,21 +76,14 @@ app.add_middleware(
 )
 
 
-# @app.on_event("startup")
-# async def startup_event():
-#     logger.info("Creating DB Records")
-#     async with sessionmanager._engine.begin() as conn:
-#         # await conn.run_sync(Base.metadata.drop_all)
-#         await conn.run_sync(Base.metadata.create_all)
-
-
-# adding time middleware
+# Adding time middleware
 @app.middleware("http")
-async def add_process_time_header(request, call_next):
+async def add_process_time_header(request: Request, call_next):
+    """Add a header with the process time for each request."""
     start_time = time.time()
     response = await call_next(request)
     process_time = time.time() - start_time
-    response.headers["X-Process-Time"] = str(process_time)
+    response.headers["X-Process-Time"] = f"{process_time:.3f}"
     return response
 
 
@@ -83,5 +94,5 @@ app.include_router(chat.router)
 app.include_router(prediction.router)
 
 if __name__ == "__main__":
-    # server api
+    # Start the API server
     uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=False)

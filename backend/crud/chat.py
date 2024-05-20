@@ -1,17 +1,36 @@
+"""
+This module provides CRUD operations for the ChatRecord model using SQLAlchemy with asynchronous support.
+Functions included:
+- create_chat: Create a new chat record.
+- update_chat_by_chatid: Update an existing chat record by its chat_id.
+- get_chat_by_chatid: Retrieve a chat record by its chat_id.
+- delete_chat_by_chatid: Delete a chat record by its chat_id.
+"""
+
+# Import necessary modules and components
 import uuid
 from fastapi import HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from backend.db_models.models import ChatRecord
-from pydantic import BaseModel
-
 import logging
 from src.settings import LoggerSettings
 
+# Setup logger
 logger = logging.getLogger(LoggerSettings().logger_name)
 
 
 async def create_chat(db_session: AsyncSession, chat_dict: dict):
+    """
+    Create a new chat record in the database and meant to be used with the prediction route.
+
+    Args:
+    - db_session (AsyncSession): The database session.
+    - chat_dict (dict): A dictionary containing the chat record details.
+
+    Returns:
+    - ChatRecord: The newly created chat record.
+    """
     chat_record = ChatRecord(**chat_dict)
     db_session.add(chat_record)
     await db_session.commit()
@@ -20,7 +39,19 @@ async def create_chat(db_session: AsyncSession, chat_dict: dict):
 
 
 async def update_chat_by_chatid(db_session: AsyncSession, chat_dict: dict):
+    """
+    Update an existing chat record in the database by its chat_id and meant to be used with the prediction route.
 
+    Args:
+    - db_session (AsyncSession): The database session.
+    - chat_dict (dict): A dictionary containing the updated chat record details.
+
+    Returns:
+    - ChatRecord: The updated chat record.
+
+    Raises:
+    - HTTPException: If the chat record is not found.
+    """
     logger.info(f"Input Chat Record: {chat_dict}")
 
     result = await db_session.execute(
@@ -42,6 +73,19 @@ async def update_chat_by_chatid(db_session: AsyncSession, chat_dict: dict):
 
 
 async def get_chat_by_chatid(db_session: AsyncSession, chat_id: uuid.UUID):
+    """
+    Retrieve a chat record from the database by its chat_id.
+
+    Args:
+    - db_session (AsyncSession): The database session.
+    - chat_id (uuid.UUID): The unique identifier of the chat record.
+
+    Returns:
+    - ChatRecord: The retrieved chat record.
+
+    Raises:
+    - HTTPException: If the chat record is not found.
+    """
     record = (
         (
             await db_session.execute(
@@ -61,6 +105,19 @@ async def get_chat_by_chatid(db_session: AsyncSession, chat_id: uuid.UUID):
 
 
 async def delete_chat_by_chatid(db_session: AsyncSession, chat_id: uuid.UUID):
+    """
+    Delete a chat record from the database by its chat_id.
+
+    Args:
+    - db_session (AsyncSession): The database session.
+    - chat_id (uuid.UUID): The unique identifier of the chat record.
+
+    Returns:
+    - ChatRecord: The deleted chat record.
+
+    Raises:
+    - HTTPException: If the chat record is not found.
+    """
     record = (
         (
             await db_session.execute(

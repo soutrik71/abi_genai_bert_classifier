@@ -1,7 +1,5 @@
 import contextlib
-from typing import Any, AsyncIterator
-
-from src.settings import env_settings
+from typing import AsyncIterator
 
 from sqlalchemy.ext.asyncio import (
     AsyncConnection,
@@ -9,17 +7,24 @@ from sqlalchemy.ext.asyncio import (
     async_sessionmaker,
     create_async_engine,
 )
-from sqlalchemy.orm import declarative_base
+from src.settings import env_settings
 
 Base = declarative_base()
 
 
 class DatabaseSessionManager:
+    """
+    A manager for managing database sessions asynchronously using SQLAlchemy.
+    """
+
     def __init__(self, url: str, engine_kwargs: dict[str, Any] = {}):
         self._engine = create_async_engine(url, **engine_kwargs)
         self._sessionmaker = async_sessionmaker(autocommit=False, bind=self._engine)
 
     async def close(self):
+        """
+        Close the database session manager.
+        """
         if self._engine is None:
             raise Exception("DatabaseSessionManager is not initialized")
         await self._engine.dispose()
@@ -29,6 +34,9 @@ class DatabaseSessionManager:
 
     @contextlib.asynccontextmanager
     async def connect(self) -> AsyncIterator[AsyncConnection]:
+        """
+        Context manager for getting a connection asynchronously.
+        """
         if self._engine is None:
             raise Exception("DatabaseSessionManager is not initialized")
 
@@ -41,6 +49,9 @@ class DatabaseSessionManager:
 
     @contextlib.asynccontextmanager
     async def session(self) -> AsyncIterator[AsyncSession]:
+        """
+        Context manager for getting a session asynchronously.
+        """
         if self._sessionmaker is None:
             raise Exception("DatabaseSessionManager is not initialized")
 
@@ -57,6 +68,9 @@ class DatabaseSessionManager:
 sessionmanager = DatabaseSessionManager(env_settings.DB_URI, {"echo": True})
 
 
-async def get_db_session():
+async def get_db_session() -> AsyncSession:
+    """
+    Get an asynchronous database session.
+    """
     async with sessionmanager.session() as session:
         yield session
