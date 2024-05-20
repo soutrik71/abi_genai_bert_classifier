@@ -26,8 +26,17 @@ router = APIRouter(tags=["prediction"])
 )
 async def do_predict(request: Request, user_chat: UserInputCreate, db: db_session):
     """
-    Perform prediction on input data using the model loaded in the app state
+    Perform prediction on the user input data and store the results in the cache and database.
+
+    Args:
+    - request (Request): The incoming request object.
+    - user_chat (UserInputCreate): The user input data for prediction.
+    - db (db_session): The database session.
+
+    Returns:
+    - PredictionInputShow: The prediction results.
     """
+
     logger.info(f"Received user query: {user_chat}")
 
     if not user_chat.session_id:

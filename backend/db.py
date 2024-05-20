@@ -10,6 +10,7 @@ from sqlalchemy.ext.asyncio import (
 from src.settings import env_settings
 
 from sqlalchemy.orm import declarative_base
+from typing import Any
 
 Base = declarative_base()
 

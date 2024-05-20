@@ -4,14 +4,17 @@ The script defines a FastAPI application with a single GET endpoint that takes a
 The endpoint checks if the result for the given key is already in the cache and returns it if found.
 If the result is not in the cache, the endpoint calls an expensive operation _get_expensive_resource() and stores the result in the cache before returning it.
 The cache has a maximum size of 100 entries and a TTL of 60 seconds.
+Also test basic authentication and verification using FastAPI.
 """
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Depends, HTTPException
 from cachetools import TTLCache
 import asyncio
 from redis import asyncio as aioredis
 from contextlib import asynccontextmanager
 import uuid
+from backend.dependencies.auth import security, verification
+from typing import Annotated
 
 
 @asynccontextmanager
@@ -39,7 +42,12 @@ async def _get_expensive_resource():
 
 
 @app.get("/")
-async def get(request: Request, key: str = None):
+async def get(
+    request: Request, key: str, Verification: Annotated[bool, Depends(verification)]
+):
+    if not Verification:
+        raise HTTPException(status_code=401, detail="Unauthorized")
+
     cache = request.app.state.cache
 
     # Check if the result is already in the cache
