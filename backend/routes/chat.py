@@ -17,12 +17,14 @@ from backend.crud.chat import (
     update_chat_by_chatid,
     delete_chat_by_chatid,
 )
-from fastapi import APIRouter, status, Request
+from fastapi import APIRouter, status, Request, HTTPException, Depends
 from backend.schemas.input import UserInputCreate, UserInputShow, PredictionInputShow
 import uuid
 from src.dummy_code import dummy_prediction
 import logging
 from src.settings import LoggerSettings
+from backend.dependencies.auth import security, verification
+from typing import Annotated
 
 # Setup logger
 logger = logging.getLogger(LoggerSettings().logger_name)
@@ -84,7 +86,12 @@ router = APIRouter(tags=["chat_records"])
     response_model=PredictionInputShow,
     status_code=status.HTTP_200_OK,
 )
-async def get_chat_by_chatid_api(request: Request, chat_id: uuid.UUID, db: db_session):
+async def get_chat_by_chatid_api(
+    request: Request,
+    chat_id: uuid.UUID,
+    db: db_session,
+    Verification: Annotated[bool, Depends(verification)],
+):
     """
     Retrieve a chat record by its chat ID.
 
@@ -96,6 +103,9 @@ async def get_chat_by_chatid_api(request: Request, chat_id: uuid.UUID, db: db_se
     Returns:
     - PredictionInputShow: The retrieved chat record.
     """
+    if not Verification:
+        raise HTTPException(status_code=401, detail="Unauthorized")
+
     return await get_chat_by_chatid(db, chat_id)
 
 
@@ -104,7 +114,10 @@ async def get_chat_by_chatid_api(request: Request, chat_id: uuid.UUID, db: db_se
     status_code=status.HTTP_204_NO_CONTENT,
 )
 async def delete_chat_by_chatid_api(
-    request: Request, chat_id: uuid.UUID, db: db_session
+    request: Request,
+    chat_id: uuid.UUID,
+    db: db_session,
+    Verification: Annotated[bool, Depends(verification)],
 ):
     """
     Delete a chat record by its chat ID.
@@ -117,4 +130,7 @@ async def delete_chat_by_chatid_api(
     Returns:
     - HTTP_204_NO_CONTENT: No content status indicating successful deletion.
     """
+    if not Verification:
+        raise HTTPException(status_code=401, detail="Unauthorized")
+
     return await delete_chat_by_chatid(db, chat_id)

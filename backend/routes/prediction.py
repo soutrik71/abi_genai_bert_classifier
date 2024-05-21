@@ -5,13 +5,15 @@ The prediction results are stored in the cache and the database.
 The route returns the prediction results to the user.
 """
 
-from fastapi import APIRouter, status, Request
+from fastapi import APIRouter, status, Request, HTTPException, Depends
 from backend.dependencies.core import DBSessionDep as db_session
 from backend.crud.chat import create_chat, update_chat_by_chatid
 import uuid
 from backend.schemas.input import UserInputCreate, PredictionInputShow, ErrorResponse
 import logging
 from src.settings import LoggerSettings
+from backend.dependencies.auth import security, verification
+from typing import Annotated
 
 logger = logging.getLogger(LoggerSettings().logger_name)
 
@@ -24,7 +26,12 @@ router = APIRouter(tags=["prediction"])
     status_code=status.HTTP_200_OK,
     responses={422: {"model": ErrorResponse}, 500: {"model": ErrorResponse}},
 )
-async def do_predict(request: Request, user_chat: UserInputCreate, db: db_session):
+async def do_predict(
+    request: Request,
+    user_chat: UserInputCreate,
+    db: db_session,
+    Verification: Annotated[bool, Depends(verification)],
+):
     """
     Perform prediction on the user input data and store the results in the cache and database.
 
@@ -36,6 +43,8 @@ async def do_predict(request: Request, user_chat: UserInputCreate, db: db_sessio
     Returns:
     - PredictionInputShow: The prediction results.
     """
+    if not Verification:
+        raise HTTPException(status_code=401, detail="Unauthorized")
 
     logger.info(f"Received user query: {user_chat}")
 
