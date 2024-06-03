@@ -4,7 +4,7 @@ services:
   # engine_svc:
   #   build:
   #     context: .
-  #     dockerfile: api.Dockerfile
+  #     dockerfile: api.Dockerfilenvdia
   #   container_name: engine_svc
   #   ports:
   #     - 8000:8000
@@ -16,18 +16,7 @@ services:
   #   depends_on:
   #     - redis
   #     - postgres
-  # worker:
-  #   build:
-  #     context: .
-  #     dockerfile: worker.Dockerfile
-  #   container_name: worker
-  #   command: celery -A api.tasks.rag worker --concurrency=1 --prefetch-multiplier=1 --loglevel=info
-  #   env_file:
-  #     - dev.env
-  #   depends_on:
-  #     - engine_svc
-  #     - redis
-  #     - postgres
+  
   redis:
     image: redis/redis-stack-server:latest
     container_name: redis
