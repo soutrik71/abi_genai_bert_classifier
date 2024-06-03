@@ -15,9 +15,10 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# Create a symbolic link for python3.10 as python
+RUN ln -s /usr/bin/python3.10 /usr/bin/python
 
-
-# Verify Python and pip installation
+# Verify Python and pip installationdocker
 RUN python3 --version && \
     python3 -m pip --version
 
