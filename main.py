@@ -88,9 +88,9 @@ async def add_process_time_header(request: Request, call_next):
 
 
 # Include routers in the API
-app.include_router(status_check.router)
-app.include_router(system_info.router)
-app.include_router(chat.router)
+# app.include_router(status_check.router)
+# app.include_router(system_info.router)
+# app.include_router(chat.router)
 app.include_router(prediction.router)
 
 if __name__ == "__main__":

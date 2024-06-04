@@ -11,27 +11,33 @@ RUN apt-get update && \
     python3.10 \
     python3.10-venv \
     python3.10-dev \
-    python3-pip && \
+    wget && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Create a symbolic link for python3.10 as python
-RUN ln -s /usr/bin/python3.10 /usr/bin/python
+# Install pip for Python 3.10
+RUN wget https://bootstrap.pypa.io/get-pip.py && \
+    python3.10 get-pip.py && \
+    rm get-pip.py
 
-# Verify Python and pip installationdocker
-RUN python3 --version && \
-    python3 -m pip --version
+# Create symbolic links for python3.10 and pip3.10
+RUN ln -sf /usr/bin/python3.10 /usr/bin/python && \
+    ln -sf /usr/local/bin/pip3.10 /usr/bin/pip
+
+# Verify Python and pip installation
+RUN python3.10 --version && \
+    python3.10 -m pip --version
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Install necessary Python packages
-RUN python3 -m pip install --no-cache-dir --upgrade pip && \
-    python3 -m pip install torch torchvision torchaudio
+RUN python3.10 -m pip install --no-cache-dir --upgrade pip && \
+    python3.10 -m pip install torch torchvision torchaudio
 
 # Copy requirements and install them
 COPY ./project_requirements.txt ./requirements.txt
-RUN python3 -m pip install --no-cache-dir -r requirements.txt
+RUN python3.10 -m pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY . .
