@@ -33,7 +33,7 @@ ENV PYTHONUNBUFFERED=1
 
 # Install necessary Python packages
 RUN python3.10 -m pip install --no-cache-dir --upgrade pip && \
-    python3.10 -m pip install torch torchvision torchaudio
+    python3.10 -m pip install torch==2.2.1 torchvision==0.17.1
 
 # Copy requirements and install them
 COPY ./project_requirements.txt ./requirements.txt
