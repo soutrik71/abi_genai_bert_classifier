@@ -91,8 +91,6 @@ earthengine-api==0.1.394
 easydict==1.13
 ecos==2.0.13
 editdistance==0.6.2
-eerepr==0.0.4
-en-core-web-sm==3.7.1
 entrypoints==0.4
 et-xmlfile==1.1.0
 etils==1.7.0
@@ -154,8 +152,6 @@ google-pasta==0.2.0
 google-resumable-media==2.7.0
 googleapis-common-protos==1.63.0
 grad-cam==1.5.0
-gradio==4.28.3
-gradio_client==0.16.0
 graphviz==0.20.2
 greenlet==3.0.3
 grpc-google-iam-v1==0.13.0
@@ -255,11 +251,7 @@ miniKanren==1.0.3
 missingno==0.5.2
 mistune==3.0.2
 mizani==0.9.3
-mkl==2023.2.0
-mkl-fft==1.3.8
-mkl-random==1.2.4
-mkl-service==2.4.0
-ml-dtypes==0.2.0
+ml-dtypes
 mlxtend==0.22.0
 more-itertools==10.1.0
 moviepy==1.0.3
@@ -331,8 +323,6 @@ pendulum==3.0.0
 pexpect==4.9.0
 pickleshare==0.7.5
 Pillow==9.4.0
-pip-tools==6.13.0
-pipreqs==0.5.0
 platformdirs==4.2.0
 plotly==5.15.0
 plotnine==0.12.4
@@ -444,9 +434,7 @@ sortedcontainers==2.4.0
 soundfile==0.12.1
 soupsieve==2.5
 soxr==0.3.7
-spacy==3.7.4
-spacy-legacy==3.0.12
-spacy-loggers==1.0.5
+spacy
 Sphinx==5.0.2
 sphinxcontrib-applehelp==1.0.8
 sphinxcontrib-devhelp==1.0.6
@@ -468,7 +456,7 @@ tabulate==0.9.0
 tbb==2021.11.0
 tblib==3.0.0
 tenacity==8.2.3
-tensorboard==2.16.2
+tensorboard
 tensorboard-data-server==0.7.2
 tensorstore==0.1.45
 termcolor==2.4.0
@@ -507,7 +495,7 @@ transformers==4.39.1
 triton==2.2.0
 ttach==0.0.3
 tweepy==4.14.0
-typer==0.12.3
+typer
 types-pytz==2024.1.0.20240203
 types-setuptools==69.2.0.20240317
 typing_extensions==4.10.0
