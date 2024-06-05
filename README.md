@@ -12,7 +12,7 @@
 - docker compose up
 - docker-compose down --rmi all
 
-### __ CUDA__
+### __ CUDA SETUP__
 - sudo apt install ubuntu-drivers-common
 - ubuntu-drivers devices
 - sudo apt install nvidia-driver-535-server
@@ -28,7 +28,7 @@
 - docker-compose --version
 
   
-### __app__
+### __APP__
 
 - python -m main
 

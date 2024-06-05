@@ -31,16 +31,18 @@ RUN python3.10 --version && \
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Install necessary Python packages
+# Install necessary DIRECT-Python packages
 RUN python3.10 -m pip install --no-cache-dir --upgrade pip && \
     python3.10 -m pip install torch==2.2.1 torchvision==0.17.1
 
-# Copy requirements and install them
+# Copy requirements and install them (seconday packages)
 COPY ./project_requirements.txt ./requirements.txt
 RUN python3.10 -m pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY . .
+COPY . /app
+
+WORKDIR /app
 
 EXPOSE 8080
 

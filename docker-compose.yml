@@ -1,4 +1,4 @@
-version: "3.3"
+version: "3.8"
 
 services:
   engine_svc:
@@ -22,6 +22,11 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 2
   
   redis:
     image: redis/redis-stack-server:latest
@@ -32,7 +37,7 @@ services:
       - dev.env
     volumes:
       - redis_data:/data
-  
+
   postgres:
     image: postgres:latest
     container_name: postgres
